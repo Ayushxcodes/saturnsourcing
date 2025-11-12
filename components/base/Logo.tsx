@@ -21,7 +21,7 @@ export default function Logo() {
         />
       </motion.div>
       <span className="group-hover:text-primary/80 transition-colors">
-        Level Up Labs
+        Saturn Consulting
       </span>
     </Link>
   );

@@ -4,16 +4,12 @@ import React from "react";
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  CodeIcon,
-  CloudIcon,
-  DatabaseIcon,
   GearIcon,
   BrainIcon,
-  DeviceMobileIcon,
-  ComputerTowerIcon,
+  UsersThreeIcon,
+  EyeIcon,
+  HeartIcon,
   GlobeIcon,
-  TerminalIcon,
-  LockIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { cn } from "@/lib/utils";
 import {
@@ -28,83 +24,63 @@ import Container from "../base/Container";
 const courseCategories = [
   {
     id: 1,
-    title: "Web Development",
-    icon: GlobeIcon,
+    title: "Expertise",
+    icon: BrainIcon,
+    description:
+      " In-depth understanding of UK and European Regulatory Framework,Taxation Advisory",
     enrolled: 12500,
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
   },
   {
     id: 2,
-    title: "DevOps",
+    title: "Background",
     icon: GearIcon,
+    description:
+      "Established to provide foreign enterprises and accounting firms with complete, one-stop solutions.",
     enrolled: 8900,
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
   },
   {
     id: 3,
-    title: "AI & ML",
-    icon: BrainIcon,
+    title: "Clients",
+    icon: GlobeIcon,
+    description:
+      "For foreign enterprises entering India and accounting firms outsourcing operations.",
     enrolled: 15200,
     bgColor: "bg-indigo-50",
     iconColor: "text-indigo-600",
   },
   {
     id: 4,
-    title: "App Development",
-    icon: DeviceMobileIcon,
+    title: "Team",
+    icon: UsersThreeIcon,
+    description:
+      "Skilled professionals specializing in accounting, compliance, risk management, and financial regulations.",
     enrolled: 11200,
     bgColor: "bg-green-50",
     iconColor: "text-green-600",
   },
   {
     id: 5,
-    title: "Backend",
-    icon: ComputerTowerIcon,
+    title: "Vision",
+    icon: EyeIcon,
+    description:
+      "Aiming to lead in accounting and regulatory advisory with exceptional compliance solutions.",
     enrolled: 9800,
     bgColor: "bg-red-50",
     iconColor: "text-red-600",
   },
   {
     id: 6,
-    title: "Frontend",
-    icon: CodeIcon,
+    title: "Values",
+    icon: HeartIcon,
+    description:
+      "Guided by honesty and ethics, while fostering creativity and forward thinking.",
     enrolled: 13400,
     bgColor: "bg-cyan-50",
     iconColor: "text-cyan-600",
-  },
-  {
-    id: 7,
-    title: "Full Stack",
-    icon: TerminalIcon,
-    enrolled: 16800,
-    bgColor: "bg-orange-50",
-    iconColor: "text-orange-600",
-  },
-  {
-    id: 8,
-    title: "Cloud Computing",
-    icon: CloudIcon,
-    enrolled: 10200,
-    bgColor: "bg-sky-50",
-    iconColor: "text-sky-600",
-  },
-  {
-    id: 9,
-    title: "Database",
-    icon: DatabaseIcon,
-    enrolled: 7600,
-    bgColor: "bg-teal-50",
-    iconColor: "text-teal-600",
-  },
-  {
-    id: 10,
-    title: "Cybersecurity",
-    icon: LockIcon,
-    enrolled: 9200,
-    bgColor: "bg-amber-50",
-    iconColor: "text-amber-600",
   },
 ];
 
@@ -121,8 +97,8 @@ export default function CourseCategory() {
           className="shrink-0"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-space-grotesk text-gradient leading-tight">
-            Explore Course <br />
-            <span className="text-primary">Categories</span>
+            Why Choose <br />
+            <span className="text-primary">Us?</span>
           </h2>
         </motion.div>
 
@@ -171,6 +147,9 @@ export default function CourseCategory() {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
+                        <p className="text-sm md:text-base text-foreground/70 mb-2">
+                          {category.description}
+                        </p>
                         <p className="text-sm md:text-base text-foreground/80">
                           <span className="text-primary font-bold font-space-grotesk">
                             {category.enrolled.toLocaleString()}
@@ -183,7 +162,8 @@ export default function CourseCategory() {
                 );
               })}
             </CarouselContent>
-            {/* Navigation Arrows - positioned below the carousel */}
+
+            {/* Navigation Arrows */}
             <div className="flex justify-center gap-3 mt-6">
               <CarouselPrevious
                 variant="outline"
