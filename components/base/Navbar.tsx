@@ -8,29 +8,62 @@ import {
   UserIcon,
   XIcon,
   ListIcon,
+  CaretDown,
 } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const navLinks = [
+  {
+    label: "Home",
+    href: "/",
+  },
   {
     label: "About",
     href: "/about",
   },
   {
     label: "Services",
-    href: "#features",
+    href: "/services",
   },
   {
     label: "Pricing",
     href: "#pricing",
   },
+  {
+    label: "Contact",
+    href: "/contact",
+  },
+];
+
+const services = [
+  { name: "Foreign Enterprises", slug: "foreign-enterprises" },
+  { name: "Accounting Outsourcing", slug: "accounting-outsourcing" },
+  { name: "NRI", slug: "nri" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isDesktopServicesOpen, setIsDesktopServicesOpen] = useState(false);
+  const servicesDropdownRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Close desktop dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        servicesDropdownRef.current &&
+        !servicesDropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsDesktopServicesOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <>
@@ -54,18 +87,77 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1, duration: 0.3 }}
                 >
-                  <Link
-                    href={link.href}
-                    className="relative px-4 py-2 text-sm font-medium font-space-grotesk text-foreground/80 hover:text-foreground transition-colors group"
-                  >
-                    {link.label}
-                    <motion.span
-                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary origin-left"
-                      initial={{ scaleX: 0 }}
-                      whileHover={{ scaleX: 1 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    />
-                  </Link>
+                  {link.label === "Services" ? (
+                    // Services Dropdown
+                    <div className="relative" ref={servicesDropdownRef}>
+                      <button
+                        onClick={() =>
+                          setIsDesktopServicesOpen(!isDesktopServicesOpen)
+                        }
+                        className="relative px-4 py-2 text-sm font-medium font-space-grotesk text-foreground/80 hover:text-foreground transition-colors flex items-center gap-1 group"
+                      >
+                        Services
+                        <motion.div
+                          animate={{ rotate: isDesktopServicesOpen ? 180 : 0 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <CaretDown weight="bold" className="size-3" />
+                        </motion.div>
+                        <motion.span
+                          className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary origin-left"
+                          initial={{ scaleX: 0 }}
+                          whileHover={{ scaleX: 1 }}
+                          transition={{ duration: 0.3, ease: "easeOut" }}
+                        />
+                      </button>
+
+                      {/* Dropdown Menu */}
+                      <AnimatePresence>
+                        {isDesktopServicesOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.2 }}
+                            className="absolute top-full left-0 mt-2 w-56 bg-background border border-neutral-200/80 rounded-lg shadow-lg overflow-hidden"
+                          >
+                            {services.map((service, idx) => (
+                              <motion.div
+                                key={service.slug}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: idx * 0.05 }}
+                              >
+                                <Link
+                                  href={`/services/${service.slug}`}
+                                  onClick={() =>
+                                    setIsDesktopServicesOpen(false)
+                                  }
+                                  className="block px-4 py-3 text-sm text-foreground/80 hover:text-foreground hover:bg-accent transition-colors border-b border-neutral-100 last:border-b-0 font-space-grotesk"
+                                >
+                                  {service.name}
+                                </Link>
+                              </motion.div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    // Regular Links
+                    <Link
+                      href={link.href}
+                      className="relative px-4 py-2 text-sm font-medium font-space-grotesk text-foreground/80 hover:text-foreground transition-colors group"
+                    >
+                      {link.label}
+                      <motion.span
+                        className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary origin-left"
+                        initial={{ scaleX: 0 }}
+                        whileHover={{ scaleX: 1 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                      />
+                    </Link>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -137,15 +229,64 @@ export default function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.1 + 0.2 }}
                     >
-                      <Link
-                        href={link.href}
-                        onClick={toggleMenu}
-                        className="text-2xl font-medium hover:text-primary transition-colors"
-                      >
-                        {link.label}
-                      </Link>
+                      {link.label === "Services" ? (
+                        <button
+                          className="w-full text-left text-2xl font-medium hover:text-primary transition-colors flex items-center justify-between"
+                          onClick={() => setIsServicesOpen(!isServicesOpen)}
+                        >
+                          Services
+                          <CaretDown
+                            size={16}
+                            weight="bold"
+                            className={`transition-transform ${
+                              isServicesOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+                      ) : (
+                        <Link
+                          href={link.href}
+                          onClick={toggleMenu}
+                          className="text-2xl font-medium hover:text-primary transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </motion.div>
                   ))}
+
+                  {/* Mobile Services Dropdown */}
+                  <AnimatePresence>
+                    {isServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.2 }}
+                        className="w-full ml-4 space-y-2"
+                      >
+                        {services.map((service) => (
+                          <motion.div
+                            key={service.slug}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <Link
+                              href={`/services/${service.slug}`}
+                              className="block py-2 text-foreground/80 hover:text-primary transition-colors"
+                              onClick={() => {
+                                setIsOpen(false);
+                                setIsServicesOpen(false);
+                              }}
+                            >
+                              {service.name}
+                            </Link>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
 
                 {/* Mobile Auth Buttons */}

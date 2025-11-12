@@ -71,10 +71,10 @@ export default function Leadership() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent font-space-grotesk">
             Our Leadership
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-slate-600 font-space-grotesk">
             Meet the talented team driving innovation at Saturn Sourcing
           </p>
         </motion.div>
@@ -90,13 +90,13 @@ export default function Leadership() {
             >
               <Card className="p-6 h-full flex flex-col hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50">
                 <div className="text-6xl mb-4 text-center">{leader.image}</div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-1">
+                <h3 className="text-xl font-semibold text-slate-900 mb-1 font-space-grotesk">
                   {leader.name}
                 </h3>
-                <p className="text-sm font-medium text-orange-600 mb-3">
+                <p className="text-sm font-medium text-orange-600 mb-3 font-space-grotesk">
                   {leader.role}
                 </p>
-                <p className="text-slate-600 text-sm mb-6 flex-grow">
+                <p className="text-slate-600 text-sm mb-6 flex-grow font-space-grotesk">
                   {leader.bio}
                 </p>
                 <div className="flex gap-3 justify-center">

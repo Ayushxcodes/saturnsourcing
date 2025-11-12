@@ -2,10 +2,10 @@
 
 import { motion } from "motion/react";
 import Container from "@/components/base/Container";
-import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
+import { PaperPlaneRight } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 
-export default function AboutHero() {
+export default function ContactHero() {
   return (
     <section className="relative w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-orange-50 via-white to-orange-50">
       <Container className="relative z-10">
@@ -23,31 +23,30 @@ export default function AboutHero() {
               className="inline-block mb-4 px-4 py-2 bg-orange-100 rounded-full"
             >
               <span className="text-sm font-semibold text-orange-700 font-space-grotesk">
-                About Saturn Sourcing
+                Get in Touch
               </span>
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-slate-900 font-space-grotesk">
-              Building Tomorrow&apos;s{" "}
+              Let&apos;s{" "}
               <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Solutions
+                Connect
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-space-grotesk">
-              With a legacy of excellence and innovation, we&apos;ve been
-              partnering with businesses globally to transform their operations
-              and unlock unprecedented growth opportunities.
+              Have a question or ready to transform your business? Our team is
+              here to help. Reach out to us and let&apos;s discuss how we can
+              partner with you to achieve your goals.
             </p>
 
             <div className="flex gap-4">
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk">
-                Learn More
-                <ArrowRight size={20} weight="bold" />
-              </button>
-              <button className="inline-flex items-center gap-2 px-6 py-3 border-2 border-orange-200 text-orange-700 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 font-space-grotesk">
-                Get in Touch
-              </button>
+              <motion.div whileHover={{ x: 5 }}>
+                <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk">
+                  Contact Us
+                  <PaperPlaneRight size={20} weight="bold" />
+                </button>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -60,8 +59,8 @@ export default function AboutHero() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/about_1.png"
-                alt="Saturn Sourcing Team"
+                src="/contact.png"
+                alt="Contact Us"
                 fill
                 className="object-cover"
                 priority

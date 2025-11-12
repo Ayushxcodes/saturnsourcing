@@ -7,7 +7,6 @@ import Comparison from "@/components/landing/Comparison";
 import FAQ from "@/components/landing/FAQ";
 import Features from "@/components/landing/Features";
 import CTA from "@/components/landing/CTA";
-import Footer from "@/components/base/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Testimonial />
       <CTA />
       <FAQ />
-      <Footer />
     </>
   );
 }

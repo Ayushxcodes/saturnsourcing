@@ -52,7 +52,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.5887 0.206 269.35);
+  --primary: oklch(66.994% 0.18641 46.521);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -98,14 +98,14 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-1: oklch(67.166% 0.17193 49.855);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary: oklch(67.166% 0.17193 49.855);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
@@ -191,4 +191,67 @@
       transparent 100%
     );
   }
+
+  /* Blurry Grid Background */
+  body {
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+        0deg,
+        rgba(249, 115, 22, 0.12) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(249, 115, 22, 0.12) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-position: 0 0;
+    filter: blur(0.8px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+        circle at 20% 50%,
+        rgba(249, 115, 22, 0.15) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        rgba(249, 115, 22, 0.12) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 50% 0%,
+        rgba(249, 115, 22, 0.1) 0%,
+        transparent 40%
+      );
+    filter: blur(30px);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+/* Remove backgrounds on About and Contact pages to show grid */
+section[class*="bg-gradient-to-b"] {
+  background: transparent !important;
+}
+
+/* Ensure all content sits above the background */
+#__next {
+  position: relative;
+  z-index: 1;
 }

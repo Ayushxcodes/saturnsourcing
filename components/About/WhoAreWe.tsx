@@ -59,7 +59,7 @@ export default function WhoAreWe() {
             >
               <UsersThree size={48} weight="bold" className="text-orange-600" />
             </motion.div>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent font-space-grotesk">
               Who Are We
             </h2>
           </div>
@@ -73,7 +73,7 @@ export default function WhoAreWe() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto mb-16"
         >
-          <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium">
+          <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium font-space-grotesk">
             Saturn Consulting Group is a reputed Accounting Outsourcing firm
             based out of India with an experience across multiple industries.
           </p>
@@ -97,7 +97,7 @@ export default function WhoAreWe() {
                 >
                   <Question size={16} weight="bold" className="text-white" />
                 </motion.div>
-                <p className="text-slate-600 leading-relaxed group-hover:text-orange-600 transition-colors duration-300 font-medium">
+                <p className="text-slate-600 leading-relaxed group-hover:text-orange-600 transition-colors duration-300 font-medium font-space-grotesk">
                   {point}
                 </p>
               </motion.div>
@@ -112,7 +112,7 @@ export default function WhoAreWe() {
             viewport={{ once: true }}
             className="bg-gradient-to-r from-orange-50 to-orange-100 border border-orange-200 rounded-xl p-8 mb-12"
           >
-            <h3 className="text-xl font-semibold text-slate-900 mb-6">
+            <h3 className="text-xl font-semibold text-slate-900 mb-6 font-space-grotesk">
               Our Aim
             </h3>
             <div className="space-y-3">
@@ -121,14 +121,14 @@ export default function WhoAreWe() {
                   <span className="text-orange-600 font-bold flex-shrink-0">
                     ✓
                   </span>
-                  <p className="text-slate-700">{item}</p>
+                  <p className="text-slate-700 font-space-grotesk">{item}</p>
                 </div>
               ))}
             </div>
           </motion.div>
 
           {/* Closing Statement */}
-          <p className="text-slate-600 leading-relaxed italic text-center">
+          <p className="text-slate-600 leading-relaxed italic text-center font-space-grotesk">
             The firm has experience in rendering diverse professional services
             to an extensive base of national as well as international clients
             and is an established name in its field.
@@ -147,10 +147,12 @@ export default function WhoAreWe() {
             >
               <Card className="p-6 h-full hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50">
                 <div className="text-4xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-3">
+                <h3 className="text-xl font-semibold text-slate-900 mb-3 font-space-grotesk">
                   {value.title}
                 </h3>
-                <p className="text-slate-600">{value.description}</p>
+                <p className="text-slate-600 font-space-grotesk">
+                  {value.description}
+                </p>
               </Card>
             </motion.div>
           ))}

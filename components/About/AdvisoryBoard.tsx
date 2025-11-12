@@ -95,10 +95,10 @@ export default function AdvisoryBoard() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-orange-500 bg-clip-text text-transparent font-space-grotesk">
             Our Advisory Board
           </h2>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-slate-600 font-space-grotesk">
             Guided by industry veterans and thought leaders shaping the future
           </p>
         </motion.div>
@@ -114,16 +114,16 @@ export default function AdvisoryBoard() {
             >
               <Card className="p-6 h-full flex flex-col hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50">
                 <div className="text-6xl mb-4 text-center">{advisor.image}</div>
-                <h3 className="text-lg font-semibold text-slate-900 mb-1">
+                <h3 className="text-lg font-semibold text-slate-900 mb-1 font-space-grotesk">
                   {advisor.name}
                 </h3>
-                <p className="text-sm font-medium text-orange-600 mb-2">
+                <p className="text-sm font-medium text-orange-600 mb-2 font-space-grotesk">
                   {advisor.role}
                 </p>
-                <p className="text-xs text-slate-500 mb-4 font-medium">
+                <p className="text-xs text-slate-500 mb-4 font-medium font-space-grotesk">
                   {advisor.expertise}
                 </p>
-                <p className="text-slate-600 text-sm mb-6 flex-grow">
+                <p className="text-slate-600 text-sm mb-6 flex-grow font-space-grotesk">
                   Expert in {advisor.expertise.toLowerCase()} with a proven
                   track record of success.
                 </p>
