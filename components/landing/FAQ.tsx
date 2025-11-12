@@ -95,36 +95,63 @@ const FAQTrigger = ({
 
 const faqData = [
   {
-    question: "What is Levelup Lab and how does it work?",
+    question: "What services do you offer?",
     answer:
-      "Levelup Lab curates quality resources and generates AI-guided paths based on your goals. You learn through projects, assessments, and progress tracking that adapts as you grow.",
+      "We provide a comprehensive suite of accounting services including payroll processing, tax preparation, financial reporting, and bookkeeping. We also offer bespoke services tailored to specific business needs.",
   },
   {
-    question: "Is there a free version available?",
+    question: "How does outsourcing accounting to the UK work?",
     answer:
-      "Yes. You can explore core features for free. A paid plan unlocks advanced analytics, unlimited paths, and priority access to new tools.",
+      "Our process begins with an initial consultation to understand your specific needs. We then set up a secure system for data transfer and communication. Regular updates and reports are provided based on your chosen service level.",
   },
   {
-    question: "How accurate is the historical information?",
+    question: "What are the benefits of outsourcing accounting services?",
     answer:
-      "We cross-reference multiple reputable sources and update content regularly. When uncertain, we surface citations and encourage verification.",
+      "Outsourcing your accounting functions can lead to significant cost savings, enhanced efficiency, and access to specialized expertise without the need for in-house training. It also allows you to focus more on your core business activities.",
   },
   {
-    question: "Can educators use this in their classrooms?",
+    question: "Is my data secure with your services?",
     answer:
-      "Absolutely. Educators can create cohorts, assign projects, and track progress with LevelupScore to support differentiated learning.",
+      "Yes, data security is our top priority. We use advanced encryption methods for data transfer and storage, and our systems comply with GDPR and other regulatory standards to ensure your information is protected.",
   },
   {
-    question: "Is this different from using ChatGPT?",
+    question: "How are your services priced?",
     answer:
-      "Yes. Unlike one-off chats, Levelup Lab provides structured courses, persistent progress, and assessments designed for long-term mastery.",
+      "We offer flexible pricing models that can be tailored to your specific needs, including fixed monthly fees, hourly rates, or per-service charges. We ensure transparency in our pricing without any hidden costs.",
   },
   {
-    question: "Can I cancel my subscription anytime?",
+    question: "Can your services scale with my business?",
     answer:
-      "Yes. You can cancel at any time from your account settings. Your data remains accessible, and you can re-subscribe whenever you like.",
+      "Absolutely. Our services are designed to scale with your business growth. We can adjust resource allocation and service levels as your business needs change.",
+  },
+  {
+    question: "Who will handle my accounts?",
+    answer:
+      "Your accounts will be managed by a dedicated team of qualified accountants who have extensive experience in managing accounts across various industries.",
+  },
+  {
+    question: "What do I need to get started with your services?",
+    answer:
+      "To get started, we require some basic information about your business and access to your existing financial records. We will guide you through the setup process to ensure a smooth transition.",
+  },
+  {
+    question:
+      "What makes your services unique compared to other outsourcing firms?",
+    answer:
+      "We differentiate ourselves through our commitment to customer service, use of the latest technology, and our ability to offer customized solutions that are specifically tailored to meet the unique needs of each client.",
+  },
+  {
+    question: "What happens if I am not satisfied with the service?",
+    answer:
+      "We strive for complete customer satisfaction and offer a service guarantee. If you’re not satisfied with our services, we will work with you to make it right, including assigning a new team to your account if necessary.",
+  },
+  {
+    question: "How can I contact you for support?",
+    answer:
+      "Our support team is available via email, phone, and live chat. We ensure quick response times to all inquiries, typically within 24 hours.",
   },
 ];
+
 
 export default function FAQ() {
   return (
