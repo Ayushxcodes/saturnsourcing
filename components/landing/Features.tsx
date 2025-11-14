@@ -15,39 +15,39 @@ import {
 const features = [
   {
     icon: ChalkboardTeacherIcon,
-    title: "Expert Instructors",
+    title: "Expert Team",
     description:
-      "Learn from certified teachers who focus on practical, real-world skills.",
+      "A professionally managed firm of distinguished chartered accountants, each specializing in their respective areas of expertise.",
   },
   {
     icon: BriefcaseIcon,
-    title: "Real Practice",
+    title: "Industry Experience",
     description:
-      "Build confidence through hands-on projects and practical exercises.",
+      "Extensive experience across multiple industries, delivering tailored and high‑quality accounting outsourcing services.",
   },
   {
     icon: SlidersIcon,
-    title: "Custom Learning",
+    title: "Client‑Focused Approach",
     description:
-      "Tailored courses for every level, from beginner basics to advanced mastery.",
+      "We synthesize knowledge into value, providing solutions that benefit our clients, our people, and the community at large.",
   },
   {
     icon: TrophyIcon,
-    title: "Proven Success",
+    title: "Trusted & Reputed",
     description:
-      "5,000+ students improved their skills and achieved their learning goals.",
+      "An established name in accounting outsourcing, trusted by national and international clients.",
   },
   {
     icon: UsersIcon,
-    title: "Community Support",
+    title: "Strong Team Advantage",
     description:
-      "Connect with fellow learners, ask questions, and get helpful feedback.",
+      "Our team is our most important sustainable competitive advantage, driving future growth and excellence.",
   },
   {
     icon: ClockIcon,
-    title: "Anytime Access",
+    title: "Comprehensive Services",
     description:
-      "Study anytime, anywhere, with flexible lessons that fit your schedule.",
+      "Delivering diverse professional services efficiently and reliably, tailored to the needs of global clients.",
   },
 ];
 

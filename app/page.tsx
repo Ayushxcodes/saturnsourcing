@@ -1,7 +1,6 @@
 import HeroSection from "@/components/landing/HeroSection";
 import LogoSection from "@/components/landing/LogoSection";
 import CourseCategory from "@/components/landing/CourseCategory";
-import Testimonial from "@/components/landing/Testimonial";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Comparison from "@/components/landing/Comparison";
 import FAQ from "@/components/landing/FAQ";
@@ -17,7 +16,6 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <Comparison />
-      <Testimonial />
       <CTA />
       <FAQ />
     </>

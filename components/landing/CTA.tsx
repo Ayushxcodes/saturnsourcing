@@ -6,8 +6,15 @@ import Container from "@/components/base/Container";
 import { Button } from "@/components/ui/button";
 import { RocketLaunchIcon, PlayIcon } from "@phosphor-icons/react/dist/ssr";
 import { MentorSvg } from "@/components/svg/svg";
+import { useRouter } from "next/navigation";
 
 export default function CTA() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/contact");
+  };
+
   return (
     <section className="py-12 md:py-16 lg:py-20 bg-muted/30">
       <Container>
@@ -21,31 +28,30 @@ export default function CTA() {
             className="flex flex-col gap-6"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-space-grotesk text-foreground leading-tight">
-              Ready to Reach the{" "}
-              <span className="text-primary">Next Level?</span>
+              Empowering{" "}
+              <span className="text-primary">Financial Excellence</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground font-space-grotesk max-w-lg">
-              Move beyond basics — master new skills with engaging, real-world
-              practice and AI-guided learning paths!
+              Partner with Saturn Consulting Group — delivering trusted
+              accounting outsourcing services driven by expertise and integrity.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <Button
                 size="lg"
                 className="w-full sm:w-auto font-space-grotesk group"
+                onClick={handleClick}
               >
-                Start Learning
-                <RocketLaunchIcon
-                  className="size-5"
-                  weight="light"
-                />
+                Contact Us
+                <RocketLaunchIcon className="size-5" weight="light" />
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="w-full sm:w-auto font-space-grotesk"
+                onClick={handleClick}
               >
                 <PlayIcon className="size-4 mr-2" weight="fill" />
-                Try Free Lesson
+                Get In Touch
               </Button>
             </div>
           </motion.div>

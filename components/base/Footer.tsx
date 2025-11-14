@@ -16,52 +16,35 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 const footerLinks = {
-  product: [
-    { label: "How it works", href: "#how-it-works" },
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Testimonials", href: "#testimonials" },
-  ],
   company: [
-    { label: "About Us", href: "#about" },
-    { label: "Blog", href: "#blog" },
-    { label: "Careers", href: "#careers" },
-    { label: "Contact", href: "#contact" },
+    { label: "About Us", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Contact", href: "/contact" },
+  ],
+  expertise: [
+    {
+      label: "Accounting Outsourcing",
+      href: "/services/accounting-outsourcing",
+    },
+    { label: "Financial Advisory", href: "/services/financial-advisory" },
+    { label: "Compliance & Taxation", href: "/services/compliance-tax" },
+    { label: "Audit Support", href: "/services/audit-support" },
   ],
   resources: [
-    { label: "Documentation", href: "#docs" },
-    { label: "Help Center", href: "#help" },
-    { label: "Community", href: "#community" },
-    { label: "FAQs", href: "#faq" },
+    { label: "Insights", href: "/insights" },
+    { label: "Case Studies", href: "/case-studies" },
   ],
   legal: [
-    { label: "Privacy Policy", href: "#privacy" },
-    { label: "Terms of Service", href: "#terms" },
-    { label: "Cookie Policy", href: "#cookies" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Terms of Service", href: "/terms" },
   ],
 };
 
 const socialLinks = [
-  {
-    icon: TwitterLogoIcon,
-    href: "#",
-    label: "Twitter",
-  },
-  {
-    icon: GithubLogoIcon,
-    href: "#",
-    label: "GitHub",
-  },
-  {
-    icon: LinkedinLogoIcon,
-    href: "#",
-    label: "LinkedIn",
-  },
-  {
-    icon: InstagramLogoIcon,
-    href: "#",
-    label: "Instagram",
-  },
+  { icon: TwitterLogoIcon, href: "#", label: "Twitter" },
+  { icon: GithubLogoIcon, href: "#", label: "GitHub" },
+  { icon: LinkedinLogoIcon, href: "#", label: "LinkedIn" },
+  { icon: InstagramLogoIcon, href: "#", label: "Instagram" },
 ];
 
 export default function Footer() {
@@ -81,9 +64,9 @@ export default function Footer() {
             >
               <Logo />
               <p className="text-sm md:text-base text-muted-foreground font-space-grotesk mt-4 max-w-md">
-                Learn anything, anywhere. Level Up Labs helps you master new
-                skills with AI-guided paths, hands-on projects, and progress
-                tracking.
+                Saturn Consulting Group is a reputed accounting outsourcing firm
+                delivering value-driven financial expertise to clients across
+                the globe.
               </p>
 
               {/* Newsletter */}
@@ -105,7 +88,7 @@ export default function Footer() {
               </div>
             </motion.div>
 
-            {/* Product Links */}
+            {/* Company Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -113,10 +96,10 @@ export default function Footer() {
               transition={{ duration: 0.4, delay: 0.1 }}
             >
               <h3 className="text-sm font-bold font-space-grotesk text-foreground mb-4">
-                Product
+                Company
               </h3>
               <ul className="space-y-3">
-                {footerLinks.product.map((link) => (
+                {footerLinks.company.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
@@ -129,7 +112,7 @@ export default function Footer() {
               </ul>
             </motion.div>
 
-            {/* Company Links */}
+            {/* Expertise Links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -137,10 +120,10 @@ export default function Footer() {
               transition={{ duration: 0.4, delay: 0.2 }}
             >
               <h3 className="text-sm font-bold font-space-grotesk text-foreground mb-4">
-                Company
+                Expertise
               </h3>
               <ul className="space-y-3">
-                {footerLinks.company.map((link) => (
+                {footerLinks.expertise.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
@@ -189,7 +172,8 @@ export default function Footer() {
                 transition={{ duration: 0.4 }}
                 className="text-sm text-muted-foreground font-space-grotesk"
               >
-                © {new Date().getFullYear()} Level Up Labs. All rights reserved.
+                © {new Date().getFullYear()} Saturn Consulting Group. All rights
+                reserved.
               </motion.p>
 
               {/* Legal Links */}
@@ -224,10 +208,7 @@ export default function Footer() {
                       initial={{ opacity: 0, scale: 0 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
-                      transition={{
-                        duration: 0.3,
-                        delay: index * 0.1,
-                      }}
+                      transition={{ duration: 0.3, delay: index * 0.1 }}
                       whileHover={{ scale: 1.1, y: -2 }}
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center justify-center size-10 rounded-lg bg-background border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
