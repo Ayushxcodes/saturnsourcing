@@ -180,7 +180,7 @@ export default function TalentHero() {
 						{/* Image Right */}
 						<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 							<img
-								src="/about_1.png"
+								src="/accountOutsourcing.png"
 								alt="Platform features illustration"
 								className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 								loading="lazy"
@@ -219,7 +219,7 @@ export default function TalentHero() {
 								{/* Image Left */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/about_1.png"
+										src="/contact.png"
 										alt="Contractor platform illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -264,7 +264,7 @@ export default function TalentHero() {
 								{/* Image Right */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/os.png"
+										src="/outsourcing.png"
 										alt="Compliant contracts illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -282,7 +282,7 @@ export default function TalentHero() {
 								{/* Image Left */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/about_1.png"
+										src="/pre-entry.png"
 										alt="Onboarding contractors illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -320,7 +320,7 @@ export default function TalentHero() {
 								{/* Image Right */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/os.png"
+										src="/post-entry.png"
 										alt="Fast payments illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
