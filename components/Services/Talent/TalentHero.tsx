@@ -224,7 +224,7 @@ export default function TalentHero() {
 								<div className="flex-1 flex flex-col gap-4 max-w-lg">
 									
 									<p className="text-sm md:text-base text-muted-foreground">
-										SaturnConsultingGroup’s easy-to-use self-serve platform puts everything you need at your fingertips, allowing you to hire, pay, and manage contractors across 180+ countries—all in one place.
+										SaturnConsultingGroup’s easy-to-use self-serve platform puts everything you need at your fingertips, allowing you to hire, pay, and manage contractors across india —all in one place.
 									</p>
 									<ul className="grid grid-cols-1 gap-3 text-sm md:text-base mt-4">
 										<li>Hire contractors compliantly across India.</li>
