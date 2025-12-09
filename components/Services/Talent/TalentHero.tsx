@@ -34,7 +34,7 @@ export default function TalentHero() {
 						className="flex flex-col items-center gap-3"
 					>
 						
-						<h1 className="text-2xl md:text-5xl lg:text-6xl font-bold font-space-grotesk text-gradient text-center">
+						<h1 className="text-2xl md:text-5xl lg:text-6xl font-bold font-space-grotesk text-center bg-gradient-to-r from-orange-500 to-orange-600 text-transparent bg-clip-text">
 							Simplify global hiring with SaturnConsultingGroup’s all-in-one employer of record solution.
 						</h1>
 						<p className="text-xs md:text-lg text-muted-foreground max-w-xl text-center">
