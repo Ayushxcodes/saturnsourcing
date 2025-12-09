@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "motion/react";
 import Container from "@/components/base/Container";
 import { Button } from "@/components/ui/button";
@@ -41,12 +42,11 @@ export default function TalentHero() {
 							Reduce compliance risks with access to deep local knowledge and expert support, so you can hire, pay, and reward your distributed team, without setting up entities.
 						</p>
 						<div className="flex flex-col md:flex-row gap-3 mt-4">
-							<Button variant="default" size="lg">
-								Explore Platform for Free
-							</Button>
-							<Button variant="outline" size="lg">
-								Book a Demo
-							</Button>
+							<Link href="/contact">
+								<Button variant="default" size="lg">
+									Join us
+								</Button>
+							</Link>
 						</div>
 						{/* Hero Image below CTA */}
 						<div className="w-full flex justify-center mt-6">
@@ -131,9 +131,6 @@ export default function TalentHero() {
 							<p className="text-sm md:text-base text-muted-foreground">
 								SaturnConsultingGroup is more than a platform—it’s your strategic partner for global expansion. Our technology, backed by expert support, allows you to focus on your team while we manage the intricacies of payroll, benefits, and compliance.
 							</p>
-							<Button variant="default" size="sm" className="w-fit mt-2">
-								Book a Demo
-							</Button>
 							<ul className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm md:text-base mt-6">
 								<li className="flex items-start gap-3">
 									<span className="inline-block w-2 h-2 mt-2 rounded-full bg-primary" />
@@ -231,9 +228,6 @@ export default function TalentHero() {
 									<p className="text-sm md:text-base text-muted-foreground">
 										SaturnConsultingGroup’s easy-to-use self-serve platform puts everything you need at your fingertips, allowing you to hire, pay, and manage contractors across 180+ countries—all in one place.
 									</p>
-									<Button variant="default" size="sm" className="w-fit mt-2">
-										Get a Demo
-									</Button>
 									<ul className="grid grid-cols-1 gap-3 text-sm md:text-base mt-4">
 										<li>Hire contractors compliantly across 180+ countries.</li>
 										<li>Pay contractors in 120+ currencies with &gt;99% accuracy.</li>
