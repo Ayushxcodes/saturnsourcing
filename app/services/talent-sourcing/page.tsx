@@ -1,9 +1,12 @@
+import TalentHero from '@/components/Services/Talent/TalentHero'
 import React from 'react'
 
-const page = () => {
+const TalentPage = () => {
   return (
-    <div>page</div>
+    <div>
+      <TalentHero />
+    </div>
   )
 }
 
-export default page
+export default TalentPage
