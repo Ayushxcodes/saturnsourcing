@@ -4,8 +4,15 @@ import { motion } from "motion/react";
 import Container from "@/components/base/Container";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function AboutHero() {
+  const router = useRouter();
+
+  const handleContactClick = () => {
+    router.push("/contact");
+  };
+
   return (
     <section className="relative w-full py-16 md:py-24 lg:py-32 bg-gradient-to-b from-orange-50 via-white to-orange-50">
       <Container className="relative z-10">
@@ -41,11 +48,17 @@ export default function AboutHero() {
             </p>
 
             <div className="flex gap-4">
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk">
+              <button
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk"
+                onClick={handleContactClick}
+              >
                 Learn More
                 <ArrowRight size={20} weight="bold" />
               </button>
-              <button className="inline-flex items-center gap-2 px-6 py-3 border-2 border-orange-200 text-orange-700 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 font-space-grotesk">
+              <button
+                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-orange-200 text-orange-700 font-semibold rounded-lg hover:bg-orange-50 transition-all duration-300 font-space-grotesk"
+                onClick={handleContactClick}
+              >
                 Get in Touch
               </button>
             </div>

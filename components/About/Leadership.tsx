@@ -8,54 +8,31 @@ import {
   TwitterLogo,
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 
 const leaders = [
   {
     id: 1,
-    name: "Ayush Pandey",
-    role: "Founder & CEO",
-    bio: "Visionary leader with 10+ years of tech industry experience",
-    image: "👨‍💼",
+    name: "Nishant Khemani",
+    role: "Managing Partner",
+    bio: "Nishant is a Chartered Accountant with experience in Business Restructuring, Tax Advisory, and previous work at KPMG's International Taxation and Regulatory division.",
+    image: "/nishant.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "ayush@saturnsourcing.com",
+      email: "nishant@saturnsourcing.com",
     },
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "Chief Technology Officer",
-    bio: "Expert in cloud infrastructure and system architecture",
-    image: "👩‍💻",
+    name: "Aman Aggarwal",
+    role: "Partner",
+    bio: "Aman Agarwal, a Chartered Accountant with an MBA in Finance, has over 10 years of consulting experience in Indian economic laws.",
+    image: "/leadership2.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
       email: "sarah@saturnsourcing.com",
-    },
-  },
-  {
-    id: 3,
-    name: "Michael Chen",
-    role: "Chief Operations Officer",
-    bio: "Operations strategist focused on efficiency and growth",
-    image: "👨‍💼",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "michael@saturnsourcing.com",
-    },
-  },
-  {
-    id: 4,
-    name: "Elena Rodriguez",
-    role: "Head of Business Development",
-    bio: "Strategic partnerships specialist driving market expansion",
-    image: "👩‍💼",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "elena@saturnsourcing.com",
     },
   },
 ];
@@ -79,7 +56,7 @@ export default function Leadership() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {leaders.map((leader, index) => (
             <motion.div
               key={leader.id}
@@ -88,8 +65,16 @@ export default function Leadership() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="p-6 h-full flex flex-col hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50">
-                <div className="text-6xl mb-4 text-center">{leader.image}</div>
+              <Card className="p-6 h-full flex flex-col hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50 items-center text-center">
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                  <Image
+                    src={leader.image}
+                    alt={leader.name}
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-1 font-space-grotesk">
                   {leader.name}
                 </h3>

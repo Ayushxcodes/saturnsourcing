@@ -27,6 +27,13 @@ const offices = [
     country: "United Arab Emirates",
     coordinates: "24.4539,54.3773",
   },
+  {
+    type: "LedgerWorks Office",
+    address: "Long Island",
+    city: "New York",
+    country: "United States",
+    coordinates: "40.7128,-74.0060",
+  },
 ];
 
 export default function ContactMap() {

@@ -12,6 +12,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import { Button } from "../ui/button";
 import { useState, useRef, useEffect } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const navLinks = [
   {
@@ -25,10 +26,6 @@ const navLinks = [
   {
     label: "Services",
     href: "/services",
-  },
-  {
-    label: "Pricing",
-    href: "#pricing",
   },
   {
     label: "Contact",
@@ -48,6 +45,7 @@ export default function Navbar() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isDesktopServicesOpen, setIsDesktopServicesOpen] = useState(false);
   const servicesDropdownRef = useRef<HTMLDivElement>(null);
+  const isMobile = useIsMobile();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -76,7 +74,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
             >
-              <Logo />
+              <Logo onClick={isMobile ? toggleMenu : undefined} />
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -129,15 +127,29 @@ export default function Navbar() {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: idx * 0.05 }}
                               >
-                                <Link
-                                  href={`/services/${service.slug}`}
-                                  onClick={() =>
-                                    setIsDesktopServicesOpen(false)
-                                  }
-                                  className="block px-4 py-3 text-sm text-foreground/80 hover:text-foreground hover:bg-accent transition-colors border-b border-neutral-100 last:border-b-0 font-space-grotesk"
-                                >
-                                  {service.name}
-                                </Link>
+                                {service.slug === "nri" ? (
+                                  <a
+                                    href="https://www.saturnnri.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={() =>
+                                      setIsDesktopServicesOpen(false)
+                                    }
+                                    className="block px-4 py-3 text-sm text-foreground/80 hover:text-foreground hover:bg-accent transition-colors border-b border-neutral-100 last:border-b-0 font-space-grotesk"
+                                  >
+                                    {service.name}
+                                  </a>
+                                ) : (
+                                  <Link
+                                    href={`/services/${service.slug}`}
+                                    onClick={() =>
+                                      setIsDesktopServicesOpen(false)
+                                    }
+                                    className="block px-4 py-3 text-sm text-foreground/80 hover:text-foreground hover:bg-accent transition-colors border-b border-neutral-100 last:border-b-0 font-space-grotesk"
+                                  >
+                                    {service.name}
+                                  </Link>
+                                )}
                               </motion.div>
                             ))}
                           </motion.div>
@@ -170,20 +182,24 @@ export default function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3, duration: 0.3 }}
               >
-                <Button variant="ghost" className="font-space-grotesk">
-                  <UserIcon weight="light" className="size-4" />
-                  Login
-                </Button>
+                <Link href="/about">
+                  <Button variant="ghost" className="font-space-grotesk">
+                    <UserIcon weight="light" className="size-4" />
+                    Team
+                  </Button>
+                </Link>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: 10 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.4, duration: 0.3 }}
               >
-                <Button variant="default" className="font-space-grotesk">
-                  <SignInIcon weight="light" className="size-4" />
-                  Sign Up
-                </Button>
+                <Link href="/contact">
+                  <Button variant="default" className="font-space-grotesk">
+                    <SignInIcon weight="light" className="size-4" />
+                    Contact
+                  </Button>
+                </Link>
               </motion.div>
             </div>
 
@@ -273,16 +289,31 @@ export default function Navbar() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.2 }}
                           >
-                            <Link
-                              href={`/services/${service.slug}`}
-                              className="block py-2 text-foreground/80 hover:text-primary transition-colors"
-                              onClick={() => {
-                                setIsOpen(false);
-                                setIsServicesOpen(false);
-                              }}
-                            >
-                              {service.name}
-                            </Link>
+                            {service.slug === "nri" ? (
+                              <a
+                                href="https://www.saturnnri.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block py-2 text-foreground/80 hover:text-primary transition-colors"
+                                onClick={() => {
+                                  setIsOpen(false);
+                                  setIsServicesOpen(false);
+                                }}
+                              >
+                                {service.name}
+                              </a>
+                            ) : (
+                              <Link
+                                href={`/services/${service.slug}`}
+                                className="block py-2 text-foreground/80 hover:text-primary transition-colors"
+                                onClick={() => {
+                                  setIsOpen(false);
+                                  setIsServicesOpen(false);
+                                }}
+                              >
+                                {service.name}
+                              </Link>
+                            )}
                           </motion.div>
                         ))}
                       </motion.div>
@@ -297,22 +328,24 @@ export default function Navbar() {
                   transition={{ delay: 0.5 }}
                   className="flex flex-col items-center gap-4 w-full"
                 >
-                  <Button
-                    variant="outline"
-                    className="w-full"
-                    onClick={toggleMenu}
-                  >
-                    <UserIcon weight="light" className="size-4" />
-                    Login
-                  </Button>
-                  <Button
-                    variant="default"
-                    className="w-full"
-                    onClick={toggleMenu}
-                  >
-                    <SignInIcon weight="light" className="size-4" />
-                    Sign Up
-                  </Button>
+                  <Link href="/about" onClick={toggleMenu} className="w-full">
+                    <Button
+                      variant="outline"
+                      className="w-full"
+                    >
+                      <UserIcon weight="light" className="size-4" />
+                      Team
+                    </Button>
+                  </Link>
+                  <Link href="/contact" onClick={toggleMenu} className="w-full">
+                    <Button
+                      variant="default"
+                      className="w-full"
+                    >
+                      <SignInIcon weight="light" className="size-4" />
+                      Contact
+                    </Button>
+                  </Link>
                 </motion.div>
               </div>
             </motion.div>

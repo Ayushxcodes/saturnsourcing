@@ -29,11 +29,12 @@ const values = [
 ];
 
 const aboutPoints = [
-  "A reputed Accounting Outsourcing firm based out of India with extensive multi-industry experience",
-  "Professionally managed by distinguished chartered accountants who are highly qualified intellectuals",
-  "Each specialist brings deep expertise in their area of focus",
-  "Our team is our single most important sustainable competitive advantage for future growth",
+  "A reputed Accounting Outsourcing firm based out of India with offices in the United States, backed by extensive multi-industry experience.",
+  "Professionally managed by distinguished Chartered Accountants who are highly qualified intellectuals.",
+  "Our specialist team includes Chartered Accountants, Certified Public Accountants, and Enrolled Agents, each bringing deep expertise in their respective areas.",
+  "Our team is our single most important sustainable competitive advantage for future growth.",
 ];
+
 
 const mission = [
   "Synthesise knowledge into value for the benefit of our clients",
@@ -74,8 +75,7 @@ export default function WhoAreWe() {
           className="max-w-3xl mx-auto mb-16"
         >
           <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium font-space-grotesk">
-            Saturn Consulting Group is a reputed Accounting Outsourcing firm
-            based out of India with an experience across multiple industries.
+            Saturn Consulting Group is a reputed Accounting Outsourcing firm based out of India with offices in the United States, backed by extensive experience across multiple industries.
           </p>
 
           {/* About Points Grid */}

@@ -28,7 +28,6 @@ const courseCategories = [
     icon: BrainIcon,
     description:
       " In-depth understanding of UK and European Regulatory Framework,Taxation Advisory",
-    enrolled: 12500,
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
   },
@@ -38,7 +37,6 @@ const courseCategories = [
     icon: GearIcon,
     description:
       "Established to provide foreign enterprises and accounting firms with complete, one-stop solutions.",
-    enrolled: 8900,
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
   },
@@ -48,7 +46,6 @@ const courseCategories = [
     icon: GlobeIcon,
     description:
       "For foreign enterprises entering India and accounting firms outsourcing operations.",
-    enrolled: 15200,
     bgColor: "bg-indigo-50",
     iconColor: "text-indigo-600",
   },
@@ -58,7 +55,6 @@ const courseCategories = [
     icon: UsersThreeIcon,
     description:
       "Skilled professionals specializing in accounting, compliance, risk management, and financial regulations.",
-    enrolled: 11200,
     bgColor: "bg-green-50",
     iconColor: "text-green-600",
   },
@@ -68,7 +64,6 @@ const courseCategories = [
     icon: EyeIcon,
     description:
       "Aiming to lead in accounting and regulatory advisory with exceptional compliance solutions.",
-    enrolled: 9800,
     bgColor: "bg-red-50",
     iconColor: "text-red-600",
   },
@@ -78,7 +73,6 @@ const courseCategories = [
     icon: HeartIcon,
     description:
       "Guided by honesty and ethics, while fostering creativity and forward thinking.",
-    enrolled: 13400,
     bgColor: "bg-cyan-50",
     iconColor: "text-cyan-600",
   },
@@ -147,14 +141,8 @@ export default function CourseCategory() {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-sm md:text-base text-foreground/70 mb-2">
+                        <p className="text-sm md:text-base text-foreground/70">
                           {category.description}
-                        </p>
-                        <p className="text-sm md:text-base text-foreground/80">
-                          <span className="text-primary font-bold font-space-grotesk">
-                            {category.enrolled.toLocaleString()}
-                          </span>{" "}
-                          Enrolled Students
                         </p>
                       </CardContent>
                     </Card>

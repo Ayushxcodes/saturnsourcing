@@ -40,9 +40,25 @@ export default function ContactHero() {
               partner with you to achieve your goals.
             </p>
 
+            <p className="text-sm text-slate-500 mb-4 font-space-grotesk">
+              For NRI services, visit{" "}
+              <a
+                href="https://www.saturnnri.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-orange-600 hover:underline"
+              >
+                Saturn NRI
+              </a>
+              .
+            </p>
+
             <div className="flex gap-4">
               <motion.div whileHover={{ x: 5 }}>
-                <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk">
+                <button
+                  onClick={() => window.location.href = "https://www.saturnnri.com/"}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-b from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 font-space-grotesk"
+                >
                   Contact Us
                   <PaperPlaneRight size={20} weight="bold" />
                 </button>

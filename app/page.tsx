@@ -1,5 +1,4 @@
 import HeroSection from "@/components/landing/HeroSection";
-import LogoSection from "@/components/landing/LogoSection";
 import CourseCategory from "@/components/landing/CourseCategory";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Comparison from "@/components/landing/Comparison";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <LogoSection />
       <CourseCategory />
       <HowItWorks />
       <Features />

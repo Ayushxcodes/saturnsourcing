@@ -101,7 +101,7 @@ export default function HeroSection() {
             className="flex items-center justify-center  relative z-10 mx-auto  rounded-2xl border bg-card/50 p-2 shadow-lg"
           >
             <img
-              src="/hero.png"
+              src="/banner.png"
               alt="Hero Section"
               width={1000}
               height={1000}

@@ -9,40 +9,47 @@ import {
   Cpu,
   BookOpen,
   Scale,
+  Shield,
 } from "lucide-react";
 
 const features = [
   {
     title:
-      "With years of experience serving UK-based accounting firms, we understand the nuances of the industry and deliver tailored solutions.",
+      "With extensive experience serving both UK and US accounting firms, we understand region-specific regulatory nuances and deliver precisely tailored outsourcing solutions.",
     icon: Briefcase,
   },
   {
     title:
-      "Our team is committed to providing personalised support, ensuring seamless communication and collaboration throughout the outsourcing process.",
+      "Our team ensures personalised support with seamless communication and collaboration, providing a smooth outsourcing experience regardless of your geography.",
     icon: Users,
   },
   {
     title:
-      "Outsourcing to India offers significant cost savings for UK-based accounting firms due to lower labour and operational costs.",
-    icon: PoundSterling,
+      "Outsourcing to India enables significant cost optimisation for UK and US firms alike, helping reduce labour and operational expenses without compromising quality.",
+    icon: PoundSterling, // or DollarSign if you want dual-region representation
   },
   {
     title:
-      "Leveraging cutting-edge accounting software and tools, we streamline processes and enhance efficiency for our clients.",
+      "We leverage advanced AI-driven accounting automation platforms to streamline workflows, minimise manual effort, and enhance accuracy across your financial processes.",
     icon: Cpu,
   },
   {
     title:
-      "Whether you need assistance with bookkeeping, support services, or process outsourcing, we offer flexible solutions tailored to your specific requirements.",
+      "Whether you require bookkeeping, compliance support, management reporting, or end-to-end process outsourcing, we provide flexible and scalable solutions aligned to your business needs.",
     icon: BookOpen,
   },
   {
     title:
-      "Our transparent pricing structure eliminates hidden costs, providing clarity and confidence in our partnership.",
+      "We follow stringent data privacy and security protocols, adhering to global standards including GDPR and SOC-compliant practices, ensuring complete protection of client information.",
+    icon: Shield, // More appropriate for cybersecurity/privacy
+  },
+  {
+    title:
+      "Our transparent pricing model offers clarity and predictability, eliminating hidden costs and allowing you to scale confidently.",
     icon: Scale,
   },
 ];
+  
 
 export default function WhyPartnerSection() {
   return (

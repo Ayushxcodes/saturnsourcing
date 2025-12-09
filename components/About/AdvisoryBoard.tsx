@@ -8,81 +8,81 @@ import {
   TwitterLogo,
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 
 const advisors = [
   {
     id: 1,
-    name: "Dr. James Mitchell",
+    name: "Samir Kumar Biswas",
     role: "Strategic Advisor",
-    expertise: "Cloud Computing & AI",
-    image: "👨‍🎓",
+    expertise:
+      "Chemical & Petrochemical Industry, Government Policy, Finance, Infrastructure, Textiles",
+    image: "/samir.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "james@example.com",
+      email: "samir@example.com",
     },
+    bio: "Former IAS Officer and Additional Secretary, Government of India. IIT Madras graduate with an MBA from IIM Bangalore. Extensive experience across chemical, petrochemical, finance, infrastructure, textiles, and governance, including 7 years as director in chemical companies."
   },
   {
     id: 2,
-    name: "Lisa Wong",
-    role: "Finance Advisor",
-    expertise: "Venture Capital & Scaling",
-    image: "👩‍💼",
+    name: "Anupam Shrivastava",
+    role: "Telecom Advisor",
+    expertise:
+      "Telecommunications, BSNL Leadership, International Representation",
+    image: "/anupam.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "lisa@example.com",
+      email: "anupam@example.com",
     },
+    bio: "1981 batch ITS officer with 30+ years of telecom experience. Former Chairman & Managing Director of BSNL. Held key positions including Director (CM), Senior GM, and represented TCIL in Zimbabwe. Trained in India and Japan."
   },
   {
     id: 3,
-    name: "David Okonkwo",
-    role: "Industry Advisor",
-    expertise: "Digital Transformation",
-    image: "👨‍💼",
+    name: "Rakesh Kumar Srivastava",
+    role: "Industry & Policy Advisor",
+    expertise:
+      "Government Regulations, Project Execution, Inter-Ministerial Coordination",
+    image: "/rk.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "david@example.com",
+      email: "rk@example.com",
     },
+    bio: "M.Tech from IIT (ISM) Dhanbad with 38+ years of experience across multiple Government of India ministries. Former Executive Director Cum Secretary, National Design Centre (Ministry of Textiles). Deep expertise in regulatory frameworks and sectoral policy execution."
   },
   {
     id: 4,
-    name: "Emma Thompson",
-    role: "Legal Advisor",
-    expertise: "Tech Law & Compliance",
-    image: "👩‍⚖️",
+    name: "Sumiran Chandra",
+    role: "Business Development Manager",
+    expertise:
+      "Economics, Policy Research, Econometrics, International Development",
+    image: "/sumiran.jpg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "emma@example.com",
+      email: "sumiran@example.com",
     },
+    location: "Netherlands",
+    bio: "MS in Social and Applied Economics (Wright State University). Experience at IIFT and NCAER with contributions to Gates Foundation–supported projects. Currently specializing in Econometrics & Management Sciences at Erasmus University, with strengths in problem-solving and policy analysis."
   },
   {
     id: 5,
-    name: "Prof. Raj Patel",
-    role: "Innovation Advisor",
-    expertise: "Research & Development",
-    image: "👨‍🔬",
+    name: "Nidhi Goenka",
+    role: "Taxation and Audit Head",
+    expertise: "Finance, Accounting, Indian Taxation Laws",
+    image: "/nidhi.jpeg",
     social: {
       linkedin: "#",
       twitter: "#",
-      email: "raj@example.com",
+      email: "nidhi@example.com",
     },
-  },
-  {
-    id: 6,
-    name: "Catherine Laurent",
-    role: "Marketing Advisor",
-    expertise: "Brand Strategy & Growth",
-    image: "👩‍💼",
-    social: {
-      linkedin: "#",
-      twitter: "#",
-      email: "catherine@example.com",
-    },
+    bio: "Chartered Accountant with 10+ years of experience in finance, accounting, audits, and Indian taxation compliance."
   },
 ];
+
 
 export default function AdvisoryBoard() {
   return (
@@ -113,7 +113,15 @@ export default function AdvisoryBoard() {
               viewport={{ once: true }}
             >
               <Card className="p-6 h-full flex flex-col hover:shadow-lg hover:shadow-orange-200 transition-all duration-300 border border-orange-100 bg-gradient-to-br from-white to-orange-50">
-                <div className="text-6xl mb-4 text-center">{advisor.image}</div>
+                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                  <Image
+                    src={advisor.image}
+                    alt={advisor.name}
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="text-lg font-semibold text-slate-900 mb-1 font-space-grotesk">
                   {advisor.name}
                 </h3>
