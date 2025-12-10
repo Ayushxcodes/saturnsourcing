@@ -16,7 +16,7 @@ const features = [
   {
     title: "Experienced CA Professionals",
     description:
-      "Our team consists of distinguished, highly qualified chartered accountants specializing in various domains.",
+      "Our team consists of distinguished, highly qualified CAs, CPAs, and Enrolled Agents specializing in various domains",
   },
   {
     title: "Strong Competitive Advantage",

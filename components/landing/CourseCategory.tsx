@@ -27,7 +27,7 @@ const courseCategories = [
     title: "Expertise",
     icon: BrainIcon,
     description:
-      " In-depth understanding of UK and European Regulatory Framework,Taxation Advisory",
+      "In-depth understanding of US, UK, and European regulatory frameworks, along with comprehensive taxation advisory across multiple jurisdictions.",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
   },

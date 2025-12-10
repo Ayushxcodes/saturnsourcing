@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import Container from "@/components/base/Container";
@@ -65,23 +66,26 @@ export default function HeroSection() {
           >
             <div className="flex flex-col gap-3 w-full items-center">
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-                <Button
-                  variant="default"
-                  className="w-full sm:w-auto font-space-grotesk"
-                >
-                  Join the waitlist
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full sm:w-auto font-space-grotesk"
-                >
-                  Learn more{" "}
-                  <ArrowRightIcon weight="bold" className="size-4 ml-1" />
-                </Button>
+                <Link href="/about">
+                  <Button
+                    variant="default"
+                    className="w-full sm:w-auto font-space-grotesk"
+                  >
+                    Get Started{" "}
+                    
+                  </Button>
+                </Link>
+                <Link href="/about">
+                  <Button
+                    variant="outline"
+                    className="w-full sm:w-auto font-space-grotesk"
+                  >
+                    Learn More{" "}
+                    <ArrowRightIcon weight="bold" className="size-4 ml-1" />
+                  </Button>
+                </Link>
               </div>
-              <p className="text-xs sm:text-sm text-muted-foreground font-space-grotesk text-center">
-                800+ people are already in the waitlist
-              </p>
+              
             </div>
           </motion.div>
           <motion.div

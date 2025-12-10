@@ -16,15 +16,15 @@ import {
 
 const offerings = [
   {
-    title: "VAT Return Preparation",
+    title: "VAT Return Preparation (US & UK)",
     description:
-      "Quarterly preparation and submission of VAT returns to ensure compliance with HMRC regulations and deadlines.",
+      "Preparation and submission of VAT/Sales Tax returns across both regions—VAT filings for the UK in compliance with HMRC regulations, and Sales Tax returns for applicable US states—ensuring accurate reporting and timely submissions.",
     icon: FileSpreadsheet,
   },
   {
-    title: "Tax Preparation",
+    title: "Tax Preparation (US & UK)",
     description:
-      "Expert tax services to ensure compliance with UK tax laws and to optimize financial benefits.",
+      "Comprehensive tax preparation services covering both US and UK requirements, including UK tax filings and US federal/state tax returns. Ensures full compliance with IRS, state authorities, and HMRC regulations while optimizing eligible financial benefits.",
     icon: FileText,
   },
   {

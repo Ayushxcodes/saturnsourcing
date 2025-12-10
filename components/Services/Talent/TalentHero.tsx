@@ -164,8 +164,8 @@ export default function TalentHero() {
 								Simplify hiring, payroll compliance & benefits for talent anywhere
 							</h2>
 							<ul className="grid grid-cols-1 gap-3 text-sm md:text-base mt-2">
-								<li>Hire and pay compliantly in india</li>
-								<li>Streamline global payments in indian currency</li>
+								<li>Hire and pay compliantly in India</li>
+								<li>Streamline global payments in Indian currency</li>
 								<li>Generate 100% legal-reviewed compliant agreements</li>
 								<li>Onboard new talent in as fast as 48 hours</li>
 								<li>Offer competitive salary, equity, and benefits</li>
@@ -224,14 +224,13 @@ export default function TalentHero() {
 								<div className="flex-1 flex flex-col gap-4 max-w-lg">
 									
 									<p className="text-sm md:text-base text-muted-foreground">
-										SaturnConsultingGroup’s easy-to-use self-serve platform puts everything you need at your fingertips, allowing you to hire, pay, and manage contractors across india —all in one place.
+										SaturnConsultingGroup’s easy-to-use self-serve platform puts everything you need at your fingertips, allowing you to hire, pay, and manage contractors across India —all in one place.
 									</p>
 									<ul className="grid grid-cols-1 gap-3 text-sm md:text-base mt-4">
 										<li>Hire contractors compliantly across India.</li>
-										<li>Pay contractors in indian currency with &gt;99% accuracy.</li>
+										<li>Pay contractors in Indian currency with &gt;99% accuracy.</li>
 										<li>Generate compliant contracts in minutes.</li>
 										<li>Manage invoices, expenses, and contract terms in one dashboard.</li>
-										<li>Add misclassification protection up to USD 500,000.</li>
 									</ul>
 								</div>
 							</motion.div>
@@ -302,7 +301,7 @@ export default function TalentHero() {
 								{/* Info Left */}
 								<div className="flex-1 flex flex-col gap-4 max-w-lg">
 									<h3 className="text-xl md:text-2xl font-semibold text-primary">
-										Fast payments in indian currency
+										Fast payments in Indian currency
 									</h3>
 									<p className="text-sm md:text-base text-muted-foreground">
 										Whether it's pay-as-you-go (PAYG), or fixed payment schedules, SaturnConsultingGroup simplifies payments across borders. Pay your contractors on-time and in the right currency, no matter the payment structure.
