@@ -17,8 +17,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Level Up Labs",
-  description: "Level Up Labs is a platform for learning and growing.",
+  title: "SatuernConsultingGroup",
+  description: "Saturn Consulting Group - Simplifying global hiring and compliance.",
 };
 
 export default function RootLayout({
