@@ -46,7 +46,7 @@ export default function ProcessOutsourcingSection() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/process-outsourcing.png"
+                src="/out2.png"
                 alt="Process Outsourcing Services"
                 fill
                 className="object-cover"

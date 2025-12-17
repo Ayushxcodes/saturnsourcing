@@ -73,7 +73,7 @@ export default function AboutHero() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/about_1.png"
+                src="/about1.png"
                 alt="Saturn Sourcing Team"
                 fill
                 className="object-cover"

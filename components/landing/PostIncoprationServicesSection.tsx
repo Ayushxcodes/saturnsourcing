@@ -122,7 +122,7 @@ export default function PostEntryServicesSection() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/post-entry.png"
+                src="/foreign4.png"
                 alt="Post-entry Services"
                 fill
                 className="object-cover"

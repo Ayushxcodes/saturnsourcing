@@ -21,10 +21,7 @@ export default function Logo({ onClick }: { onClick?: () => void }) {
         whileHover={{ rotate: [0, -10, 10, -10, 0] }}
         transition={{ duration: 0.5 }}
       >
-        <EscalatorUpIcon
-          weight="duotone"
-          className="size-10 text-primary group-hover:text-primary/80 transition-colors"
-        />
+        
       </motion.div>
       <span className="group-hover:text-primary/80 transition-colors">
         Saturn Consulting Group
