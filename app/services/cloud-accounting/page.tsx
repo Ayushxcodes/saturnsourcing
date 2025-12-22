@@ -1,13 +1,12 @@
 import AccountingHero from "@/components/landing/AccountingHero";
 import OurOfferingsSection from "@/components/landing/OurOffering";
 import ProcessOutsourcingSection from "@/components/landing/ProceesOutsourcing";
-import WhyPartnerSection from "@/components/landing/WhyPartner";
 
 
 export const metadata = {
-  title: "Accounting Outsourcing | Saturn Sourcing",
+  title: "Cloud Accounting & Tax Strategy | Saturn Sourcing",
   description:
-    "Comprehensive accounting and financial solutions tailored for international businesses operating in India.",
+    "Unlock your true potential with cloud accounting solutions that simplify finances, ensure precision, and fuel lasting growth for US businesses.",
 };
 
 export default function cloudAccountingAndTaxStrategyPage() {
@@ -16,7 +15,6 @@ export default function cloudAccountingAndTaxStrategyPage() {
       <AccountingHero />
       <OurOfferingsSection />
       <ProcessOutsourcingSection/>
-      <WhyPartnerSection />
     </main>
   );
 }

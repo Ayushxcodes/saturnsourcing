@@ -16,64 +16,58 @@ import {
 
 const offerings = [
   {
-    title: "VAT Return Preparation (US & UK)",
+    title: "Core Accounting Services",
     description:
-      "Preparation and submission of VAT/Sales Tax returns across both regions—VAT filings for the UK in compliance with HMRC regulations, and Sales Tax returns for applicable US states—ensuring accurate reporting and timely submissions.",
+      "Foundational accounting services designed for U.S. businesses: Bookkeeping & General Ledger Management, Accounts Payable & Receivable Management, Bank Reconciliation & Cash Flow Monitoring, Multi-entity & multi-currency accounting (where applicable), Accurate Financial Reporting & Statement Preparation (GAAP compliant)",
     icon: FileSpreadsheet,
   },
   {
-    title: "Tax Preparation (US & UK)",
+    title: "Tax & Compliance Services",
     description:
-      "Comprehensive tax preparation services covering both US and UK requirements, including UK tax filings and US federal/state tax returns. Ensures full compliance with IRS, state authorities, and HMRC regulations while optimizing eligible financial benefits.",
+      "Stay compliant with federal, state, and local tax requirements: Federal and state business tax filings, Quarterly estimated tax payments, Entity-specific compliance (LLC, S-Corp, C-Corp, Partnerships), Audit preparation and representation, Ongoing tax planning & advisory",
     icon: FileText,
   },
   {
-    title: "Bookkeeping",
+    title: "Financial Insights & Reporting",
     description:
-      "Accurate and timely bookkeeping to keep your financial records organized and up-to-date.",
-    icon: BookOpen,
-  },
-  {
-    title: "Financial Planning and Analysis",
-    description:
-      "Strategic planning services to forecast future conditions and guide business decisions.",
+      "Actionable financial insights to grow your business: Custom Financial Dashboards, Profit & Loss Analysis, Cash Flow Forecasting, Expense Tracking & Budgeting, Management Reports & KPI Monitoring",
     icon: BarChart3,
   },
   {
-    title: "Budgeting and Forecasting",
+    title: "Automation & Cloud Integration",
     description:
-      "Detailed budgeting and financial forecasts to help you plan for the future and allocate resources effectively.",
+      "Leverage technology to streamline accounting tasks: Automated Invoicing & Payment Reminders, Bank Feed Integration & Auto-Categorization, Integration with Payroll, CRM, and E-commerce Platforms, AI-driven Expense Categorization & Fraud Detection, Cloud-based Access & Secure Data Storage",
     icon: LineChart,
   },
   {
-    title: "Payroll Processing",
+    title: "Consulting & Advisory Services",
     description:
-      "Streamline payroll management with automated systems ensuring accuracy and compliance.",
+      "Beyond compliance — strategic financial advice for U.S. businesses: Business & Financial Planning, Growth & Performance Analysis, Startup & Small Business Advisory, Technology & Cloud Accounting Implementation, Training & Support for In-house Teams",
+    icon: Briefcase,
+  },
+  {
+    title: "Sales Tax",
+    description:
+      "Manage multi-state and local sales tax compliance with confidence: Sales tax calculation & automated filing, Nexus tracking for multi-state compliance, Sales tax reports for e-commerce & retail, Exemption certificate management, Sales tax audit support",
     icon: CreditCard,
   },
   {
-    title: "Financial Reporting",
+    title: "Income Tax",
     description:
-      "Comprehensive reporting services to provide clear insights into your financial status, facilitating better business decisions.",
+      "Full-service federal and state income tax solutions: Preparation & filing of federal income tax returns, State-specific corporate & individual income tax compliance, Quarterly estimated tax planning, Maximizing allowable deductions & credits, IRS audit support & representation",
     icon: FileChartColumn,
   },
   {
-    title: "Accounts Payable and Receivable",
+    title: "Payroll & Employment Taxes",
     description:
-      "Efficient management of your invoices and payments to maintain cash flow and vendor relationships.",
+      "Stay compliant with payroll tax laws and employment reporting: Payroll processing & tax withholding, FICA, FUTA, and state unemployment tax compliance, Quarterly & annual payroll tax returns, W-2 & 1099 preparation & filing, Multi-state employment tax compliance",
     icon: Wallet,
   },
   {
-    title: "Compliance and Risk Management",
+    title: "Other Business-Related Taxes",
     description:
-      "Ensure your business adheres to all regulatory requirements and minimize risks through proactive strategies.",
+      "Covering additional taxes common to U.S. businesses: Franchise Taxes (state-specific), Excise Taxes (federal & industry-based), Gross Receipts Taxes, Occupational & industry-specific compliance, Ongoing tax planning & advisory",
     icon: ShieldCheck,
-  },
-  {
-    title: "Management Consulting",
-    description:
-      "Expert advice and consultation to enhance business operations, improve efficiency, and drive growth.",
-    icon: Briefcase,
   },
 ];
 

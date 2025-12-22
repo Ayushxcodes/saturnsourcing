@@ -16,14 +16,11 @@ export default function AccountingHero() {
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-space-grotesk text-foreground mb-4">
               <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Accounting Outsourcing
+                  Cloud Accounting and Tax strategy
               </span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/70 leading-relaxed">
-              Accounting Outsourcing helps businesses streamline finances,
-              ensure compliance, and reduce costs by relying on expert
-              professionals — allowing companies to focus on core operations and
-              growth.
+              Unlock your true potential with cloud accounting solutions that simplify finances, ensure precision, and fuel lasting growth.
             </p>
           </motion.div>
 

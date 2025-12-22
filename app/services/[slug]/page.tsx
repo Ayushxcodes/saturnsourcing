@@ -9,7 +9,7 @@ interface Props {
 // ✅ REQUIRED for static export
 export async function generateStaticParams() {
   return [
-    { slug: "accounting-outsourcing" },
+    { slug: "cloud-accounting" },
     { slug: "tax-consulting" },
     { slug: "business-advisory" },
     { slug: "financial-planning" },

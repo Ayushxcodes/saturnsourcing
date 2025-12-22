@@ -34,7 +34,7 @@ const navLinks = [
 ];
 
 const services = [
-  { name: "Cloud Accounting & Tax Strategy", slug: "accounting-outsourcing" },
+  { name: "Cloud Accounting & Tax Strategy", slug: "cloud-accounting" },
   { name: "Talent Sourcing", slug: "talent-sourcing" },
   { name: "NRI", slug: "nri" },
 ];

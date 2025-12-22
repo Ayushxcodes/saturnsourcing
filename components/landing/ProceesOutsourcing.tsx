@@ -6,28 +6,34 @@ import { FileText, Headset, ShoppingCart, ShieldCheck } from "lucide-react";
 
 const services = [
   {
-    title: "Invoice to Cash Process",
+    title: "Virtual Tax Strategy",
     icon: FileText,
     description:
-      "Comprehensive management of billing, invoicing, and collections to optimize cash flow and improve financial efficiency.",
+      "Deviating from the norm – year-round tax strategy and implementation. Entity choice and compensation, multi-state nexus, QSBS (§1202), §41/R&D, and real estate strategies (REPS, cost segregation, STR rules). Coordinated with monthly accounting so savings actually hit the return, not just a slide deck.",
   },
   {
-    title: "Virtual Support Service",
+    title: "Execution-Backed Tax Strategies",
     icon: Headset,
     description:
-      "Providing professional virtual assistance for administrative, operational, and customer support tasks.",
+      "Delivered 100% virtually across the US with audit-defensible documentation. Start with a tax advisory subscription and integrate bookkeeping and accounting advisory as needed.",
   },
   {
-    title: "Purchase To Pay Process",
+    title: "Strategic Tax Planning",
     icon: ShoppingCart,
     description:
-      "Streamlined procurement and payment management, from purchase orders to vendor payments, ensuring compliance and accuracy.",
+      "As an entrepreneur, you know every dollar counts. Strategic tax strategies can be the most important investment you make in your business.",
   },
   {
-    title: "Warranty Reconciliations & Verifications",
+    title: "Proactive Financial Management",
     icon: ShieldCheck,
     description:
-      "Detailed verification and reconciliation of warranty claims to ensure transparency, accuracy, and cost efficiency.",
+      "At LedgerWorks, we empower clients with comprehensive review and planning, delivering high-impact tax strategies tailored to your unique situation. Identify, implement, and report seamlessly.",
+  },
+  {
+    title: "Tax Planning with a Satisfaction Guarantee",
+    icon: ShieldCheck,
+    description:
+      "Our Advanced Tax Strategy Advisory has delivered an average ROI of 250%+, across startups, real estate investors.",
   },
 ];
 
@@ -65,11 +71,10 @@ export default function ProcessOutsourcingSection() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold font-space-grotesk text-foreground mb-8">
-              Process{" "}
+              Strengthen Your{" "}
               <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Outsourcing
-              </span>{" "}
-              Services
+                Strategy
+              </span>
             </h2>
 
             <div className="space-y-6">
