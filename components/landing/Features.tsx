@@ -15,41 +15,42 @@ import {
 const features = [
   {
     icon: ChalkboardTeacherIcon,
-    title: "Expert Team",
+    title: "AI-First by Design",
     description:
-      "A professionally managed firm of distinguished chartered accountants, each specializing in their respective areas of expertise.",
+      "Our systems automate transaction processing, reconciliations, and categorization in real time—reducing manual work from day one.",
   },
   {
     icon: BriefcaseIcon,
-    title: "Industry Experience",
+    title: "Built on Proven Accounting Logic",
     description:
-      "Extensive experience across multiple industries, delivering tailored and high‑quality accounting outsourcing services.",
+      "AI models trained on real accounting workflows, not generic automation—designed to handle edge cases, exceptions, and scale with your business.",
   },
   {
     icon: SlidersIcon,
-    title: "Client‑Focused Approach",
+    title: "Outcome-Driven",
     description:
-      "We synthesize knowledge into value, providing solutions that benefit our clients, our people, and the community at large.",
+      "We focus on results, not activities. Faster closes, cleaner books, and always-ready financials—without chasing updates.",
   },
   {
     icon: TrophyIcon,
-    title: "Trusted & Reputed",
+    title: "Reliable & Auditable",
     description:
-      "An established name in accounting outsourcing, trusted by national and international clients.",
+      "Every automated action is traceable, reviewable, and compliant—giving you transparency and confidence, not black-box accounting.",
   },
   {
     icon: UsersIcon,
-    title: "Strong Team Advantage",
+    title: "Human Expertise Where It Matters",
     description:
-      "Our team is our most important sustainable competitive advantage, driving future growth and excellence.",
+      "Automation handles volume, while experienced US accounting professionals step in for judgment, review, and complex decisions.",
   },
   {
     icon: ClockIcon,
-    title: "Comprehensive Services",
+    title: "One Connected System",
     description:
-      "Delivering diverse professional services efficiently and reliably, tailored to the needs of global clients.",
+      "Bookkeeping, payroll, reporting, and insights working together as a single automated workflow—not disconnected services.",
   },
 ];
+
 
 export default function Features() {
   return (
@@ -76,7 +77,7 @@ export default function Features() {
               </span>
             </motion.div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-space-grotesk text-gradient leading-tight">
-              The Better Way to <span className="text-primary">Learn</span>
+              A Smarter Way to <span className="text-primary">Run Accounting</span>
             </h2>
           </div>
 

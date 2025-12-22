@@ -24,28 +24,28 @@ import Container from "../base/Container";
 const courseCategories = [
   {
     id: 1,
-    title: "Expertise",
+    title: "AI Expertise",
     icon: BrainIcon,
     description:
-      "In-depth understanding of US, UK, and European regulatory frameworks, along with comprehensive taxation advisory across multiple jurisdictions.",
+      "US GAAP–aligned accounting powered by intelligent automation.Our AI handles transaction categorization, reconciliations, and anomaly detection—continuously and at scale.",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
   },
   {
     id: 2,
-    title: "Background",
+    title: "Automation-First Platform",
     icon: GearIcon,
     description:
-      "Established to provide foreign enterprises and accounting firms with complete, one-stop solutions.",
+      "Built from the ground up for speed and accuracy.Always-on workflows, real-time financials, and a continuous close—without manual back-and-forth.",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
   },
   {
     id: 3,
-    title: "Clients",
+    title: "US-Focused Customers",
     icon: GlobeIcon,
     description:
-      "For foreign enterprises entering India and accounting firms outsourcing operations.",
+      "Trusted by US startups, SMBs, and growing finance teams.Designed for companies that want modern, automated accounting without sacrificing compliance or control.",
     bgColor: "bg-indigo-50",
     iconColor: "text-indigo-600",
   },
@@ -54,7 +54,7 @@ const courseCategories = [
     title: "Team",
     icon: UsersThreeIcon,
     description:
-      "Skilled professionals specializing in accounting, compliance, risk management, and financial regulations.",
+      "A blend of product thinkers and accounting professionals.Our team designs automated accounting systems and monitors them continuously—so issues are caught early, not at month-end",
     bgColor: "bg-green-50",
     iconColor: "text-green-600",
   },
@@ -63,7 +63,7 @@ const courseCategories = [
     title: "Vision",
     icon: EyeIcon,
     description:
-      "Aiming to lead in accounting and regulatory advisory with exceptional compliance solutions.",
+      "Accounting that runs in the background.We aim to eliminate manual processes and delays, giving US businesses instant access to accurate, decision-ready financials.",
     bgColor: "bg-red-50",
     iconColor: "text-red-600",
   },
@@ -72,7 +72,7 @@ const courseCategories = [
     title: "Values",
     icon: HeartIcon,
     description:
-      "Guided by honesty and ethics, while fostering creativity and forward thinking.",
+      "Built for trust at scale.We value precision, clarity, and systems that improve over time—so your books get smarter, not just faster.",
     bgColor: "bg-cyan-50",
     iconColor: "text-cyan-600",
   },

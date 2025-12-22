@@ -148,9 +148,6 @@ const HowItWorks = () => {
                 <h3 className="text-lg md:text-2xl font-bold text-slate-900">
                   Professional Accounting Services
                 </h3>
-                <button className="size-5 md:size-10 shrink-0 rounded-full border-2 border-slate-300 flex items-center justify-center active:scale-[0.98] transition duration-200 hover:bg-slate-100">
-                  <PlusIcon className="size-4 md:size-5" weight="bold" />
-                </button>
               </div>
             </div>
 
@@ -219,9 +216,6 @@ const HowItWorks = () => {
                 <h3 className="text-lg md:text-2xl font-bold text-slate-900">
                   Streamlined Workflow Process
                 </h3>
-                <button className="size-5 md:size-10 shrink-0 rounded-full border-2 border-slate-300 flex items-center justify-center active:scale-[0.98] transition duration-200 hover:bg-slate-100">
-                  <PlusIcon className="size-4 md:size-5" weight="bold" />
-                </button>
               </div>
             </div>
 
@@ -326,9 +320,6 @@ const HowItWorks = () => {
                 <h3 className="text-lg md:text-2xl font-bold text-slate-900">
                   Expert Team & Results
                 </h3>
-                <button className="size-5 md:size-10 shrink-0 rounded-full border-2 border-slate-300 flex items-center justify-center active:scale-[0.98] transition duration-200 hover:bg-slate-100">
-                  <PlusIcon className="size-4 md:size-5" weight="bold" />
-                </button>
               </div>
             </div>
           </div>

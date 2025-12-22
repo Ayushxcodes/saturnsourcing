@@ -29,11 +29,11 @@ export default function CTA() {
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-space-grotesk text-foreground leading-tight">
               Empowering{" "}
-              <span className="text-primary">Financial Excellence</span>
+              <span className="text-primary">Financial Clarity</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground font-space-grotesk max-w-lg">
-              Partner with Saturn Consulting Group — delivering trusted
-              accounting outsourcing services driven by expertise and integrity.
+              Partner with Saturn Consulting Group to run your accounting on autopilot
+              AI-powered workflows,real-time financials,and expert oversight built for US Business.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <Button
@@ -41,7 +41,7 @@ export default function CTA() {
                 className="w-full sm:w-auto font-space-grotesk group"
                 onClick={handleClick}
               >
-                Contact Us
+                Get Started
                 <RocketLaunchIcon className="size-5" weight="light" />
               </Button>
               <Button
@@ -51,7 +51,7 @@ export default function CTA() {
                 onClick={handleClick}
               >
                 <PlayIcon className="size-4 mr-2" weight="fill" />
-                Get In Touch
+                Talk to an Expert
               </Button>
             </div>
           </motion.div>

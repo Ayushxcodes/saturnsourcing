@@ -9,34 +9,29 @@ import { cn } from "@/lib/utils";
 
 const features = [
   {
-    title: "Reputed Outsourcing Firm",
+    title: "AI-Native Accounting Platform",
     description:
-      "Saturn Consulting Group is a trusted accounting outsourcing firm with strong credibility across industries.",
+      "Our accounting workflows are automated end-to-end using AI—from transaction processing to reconciliations—reducing manual effort and errors.",
   },
   {
-    title: "Experienced CA Professionals",
+    title: "Built for US Standards",
     description:
-      "Our team consists of distinguished, highly qualified CAs, CPAs, and Enrolled Agents specializing in various domains",
+      "Designed specifically for US GAAP, payroll, and tax-ready reporting—so your books are always compliant and audit-ready.",
   },
   {
-    title: "Strong Competitive Advantage",
+    title: "Faster, Continuous Close",
     description:
-      "Our people form our most important sustainable competitive advantage for future growth.",
+      "No more month-end fire drills. Our systems operate continuously, delivering up-to-date financials without delays or follow-ups.",
   },
   {
-    title: "Knowledge Into Value",
+    title: "Human Expertise Where It Counts",
     description:
-      "We synthesize knowledge into value for the benefit of our clients, our people, and society.",
+      "AI handles scale and speed. Experienced accounting professionals focus on reviews, edge cases, and strategic insights.",
   },
   {
-    title: "Diverse Global Clientele",
+    title: "Clear, Decision-Ready Reporting",
     description:
-      "We provide diverse professional services to both national and international clients.",
-  },
-  {
-    title: "Established & Trusted",
-    description:
-      "With years of experience, we are an established name known for delivering reliable, high-quality services.",
+      "Clean financial statements, real-time dashboards, and actionable insights—so you can move faster with confidence.",
   },
 ];
 
@@ -58,8 +53,8 @@ export default function Features() {
               <span className="text-primary">Saturn Consulting Group</span>
             </h2>
             <p className="text-base md:text-lg text-muted-foreground font-space-grotesk max-w-2xl mx-auto">
-              A trusted and experienced accounting outsourcing firm delivering
-              value through expertise.
+              AI-powered accounting built for US businesses—combining intelligent
+              automation with dependable financial expertise.
             </p>
           </div>
 
