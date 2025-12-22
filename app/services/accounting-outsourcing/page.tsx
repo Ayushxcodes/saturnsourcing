@@ -10,7 +10,7 @@ export const metadata = {
     "Comprehensive accounting and financial solutions tailored for international businesses operating in India.",
 };
 
-export default function ForeignEnterprisesPage() {
+export default function cloudAccountingAndTaxStrategyPage() {
   return (
     <main>
       <AccountingHero />

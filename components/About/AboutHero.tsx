@@ -35,16 +35,17 @@ export default function AboutHero() {
             </motion.div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-slate-900 font-space-grotesk">
-              Building Tomorrow&apos;s{" "}
+              Built for {""}
               <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-                Solutions
+                AI-First{" "}
               </span>
+              Accounting World
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-space-grotesk">
-              With a legacy of excellence and innovation, we&apos;ve been
-              partnering with businesses globally to transform their operations
-              and unlock unprecedented growth opportunities.
+              Traditional accounting wasn’t designed for speed or scale.
+ We build AI-driven accounting systems that run continuously—automating workflows, surfacing insights, and keeping US businesses audit-ready at all times.
+This isn’t outsourcing. It’s a smarter operating model for finance.
             </p>
 
             <div className="flex gap-4">

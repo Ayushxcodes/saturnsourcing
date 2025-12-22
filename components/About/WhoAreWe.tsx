@@ -8,38 +8,41 @@ import { Question, UsersThree } from "@phosphor-icons/react/dist/ssr";
 const values = [
   {
     icon: "🎯",
-    title: "Innovation",
-    description: "Driving cutting-edge solutions for modern challenges",
+    title: " Innovation",
+    description:
+      "We improve systems, not just tools.Our focus is on practical innovation—changes that remove friction and make accounting more reliable over time.",
   },
   {
-    icon: "🤝",
+    icon: "🤝 ",
     title: "Collaboration",
-    description: "Building strong partnerships with our community",
+    description:
+      "Accounting works best when it’s aligned.We work closely with our clients’ teams to ensure processes fit real workflows, not theoretical models.",
   },
   {
-    icon: "🌱",
+    icon: "📈",
     title: "Growth",
-    description: "Empowering individuals and businesses to scale",
+    description:
+      "Designed for long-term scale.We build foundations that support growth without constant rework, process changes, or operational strain",
   },
   {
     icon: "✨",
-    title: "Excellence",
-    description: "Delivering quality in everything we do",
+    title: " Excellence",
+    description:
+      "Consistency over perfection.We prioritize repeatable accuracy, clear standards, and dependable outcomes—month after month.",
   },
 ];
 
 const aboutPoints = [
-  "A reputed Accounting Outsourcing firm based out of India with offices in the United States, backed by extensive multi-industry experience.",
-  "Professionally managed by distinguished Chartered Accountants who are highly qualified intellectuals.",
-  "Our specialist team includes Chartered Accountants, Certified Public Accountants, and Enrolled Agents, each bringing deep expertise in their respective areas.",
-  "Our team is our single most important sustainable competitive advantage for future growth.",
+  "Systems Over Tasks\nWe believe accounting should function as a system, not a series of manual activities. Every workflow is designed for consistency, traceability, and scale.",
+  "Clarity Over Complexity\nFinancial data is only useful when it’s understandable. We prioritize clean structures, clear reporting, and numbers that teams can trust.",
+  "Built for Change\nBusinesses evolve quickly. Our approach anticipates growth, new requirements, and increased volume—without forcing process resets.",
+  "Judgment Where It Matters\nAutomation handles routine execution. Human expertise is applied where interpretation, context, and decisions are required.",
 ];
 
-
 const mission = [
-  "Synthesise knowledge into value for the benefit of our clients",
-  "Create opportunities for our people to grow and succeed",
-  "Contribute positively to the community at large",
+  "Turn accounting into a dependable operating foundation",
+  "Remove noise so financial signals are easy to read",
+  "Help teams move faster with confidence in their numbers",
 ];
 
 export default function WhoAreWe() {
@@ -74,9 +77,23 @@ export default function WhoAreWe() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto mb-16"
         >
-          <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium font-space-grotesk">
-            Saturn Consulting Group is a reputed Accounting Outsourcing firm based out of India with offices in the United States, backed by extensive experience across multiple industries.
+          <p className="text-lg text-slate-600 leading-relaxed mb-6 font-medium font-space-grotesk">
+            Saturn Consulting Group builds accounting infrastructure for growing
+            US businesses. We focus on creating dependable financial systems that
+            reduce friction, adapt as companies scale, and surface the
+            information leaders need to make decisions.
           </p>
+
+          <p className="text-lg text-slate-600 leading-relaxed mb-10 font-medium font-space-grotesk">
+            Rather than relying on manual effort or traditional outsourcing
+            models, we design accounting operations that are structured,
+            repeatable, and built to run continuously.
+          </p>
+
+          {/* Small Heading */}
+          <h3 className="text-xl font-semibold text-slate-900 mb-6 font-space-grotesk">
+            How We Think
+          </h3>
 
           {/* About Points Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
@@ -97,8 +114,8 @@ export default function WhoAreWe() {
                 >
                   <Question size={16} weight="bold" className="text-white" />
                 </motion.div>
-                <p className="text-slate-600 leading-relaxed group-hover:text-orange-600 transition-colors duration-300 font-medium font-space-grotesk">
-                  {point}
+                <p className="text-slate-600 leading-relaxed group-hover:text-orange-600 transition-colors duration-300 font-medium font-space-grotesk whitespace-pre-line">
+                  -{point}
                 </p>
               </motion.div>
             ))}
@@ -126,13 +143,6 @@ export default function WhoAreWe() {
               ))}
             </div>
           </motion.div>
-
-          {/* Closing Statement */}
-          <p className="text-slate-600 leading-relaxed italic text-center font-space-grotesk">
-            The firm has experience in rendering diverse professional services
-            to an extensive base of national as well as international clients
-            and is an established name in its field.
-          </p>
         </motion.div>
 
         {/* Values Section */}
