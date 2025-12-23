@@ -33,7 +33,7 @@ export default function AccountingHero() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/out1.png"
+                src="/new3.avif"
                 alt="Foreign Enterprises Services"
                 fill
                 className="object-cover"

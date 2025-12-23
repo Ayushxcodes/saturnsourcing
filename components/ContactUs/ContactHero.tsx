@@ -75,7 +75,7 @@ export default function ContactHero() {
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/contact.png"
+                src="/new5.png"
                 alt="Contact Us"
                 fill
                 className="object-cover"

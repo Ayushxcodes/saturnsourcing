@@ -51,7 +51,7 @@ export default function TalentHero() {
 						{/* Hero Image below CTA */}
 						<div className="w-full flex justify-center mt-6">
 							<img
-								src="/talent1.png"
+								src="/new4.png"
 								alt="Global hiring illustration"
 								className="w-[320px] md:w-[420px] lg:w-[520px] h-auto drop-shadow-xl border-2 border-primary rounded-xl bg-white"
 								loading="lazy"
@@ -117,7 +117,7 @@ export default function TalentHero() {
 						{/* Image Left */}
 						<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 							<img
-								src="/talent2.png"
+								src="/new5.png"
 								alt="SaturnConsultingGroup platform illustration"
 								className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 								loading="lazy"
@@ -175,7 +175,7 @@ export default function TalentHero() {
 						{/* Image Right */}
 						<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 							<img
-								src="/talent3.png"
+								src="/new6.png"
 								alt="Platform features illustration"
 								className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 								loading="lazy"
@@ -214,7 +214,7 @@ export default function TalentHero() {
 								{/* Image Left */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/contact.png"
+										src="/new7.png"
 										alt="Contractor platform illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -255,7 +255,7 @@ export default function TalentHero() {
 								{/* Image Right */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/global.png"
+										src="/new8.png"
 										alt="Compliant contracts illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -273,7 +273,7 @@ export default function TalentHero() {
 								{/* Image Left */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/foreign2.png"
+										src="/new10.png"
 										alt="Onboarding contractors illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -311,7 +311,7 @@ export default function TalentHero() {
 								{/* Image Right */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/money.png"
+										src="/new9.png"
 										alt="Fast payments illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"
@@ -329,7 +329,7 @@ export default function TalentHero() {
 								{/* Image Left */}
 								<div className="flex-1 flex justify-center items-center max-w-lg mb-8 md:mb-0">
 									<img
-										src="/foreign4.png"
+										src="/new11.png"
 										alt="Streamlined management illustration"
 										className="w-[320px] md:w-[400px] lg:w-[480px] h-auto rounded-xl shadow-lg border-2 border-primary bg-white"
 										loading="lazy"

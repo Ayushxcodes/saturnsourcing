@@ -74,7 +74,7 @@ This isn’t outsourcing. It’s a smarter operating model for finance.
           >
             <div className="relative w-full aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-100 to-orange-50 border-4 border-orange-200">
               <Image
-                src="/about1.png"
+                src="/new1.avif"
                 alt="Saturn Sourcing Team"
                 fill
                 className="object-cover"
