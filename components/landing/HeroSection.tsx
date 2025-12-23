@@ -38,7 +38,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-2xl md:text-5xl lg:text-6xl font-bold font-space-grotesk text-gradient text-center"
           >
-            AI-Driven Accounting ,Human-Verified
+            AI-Driven Accounting, Human-Verified
             <br />
             <span className="text-gradient">
               Partner{" "}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className="text-xs md:text-lg text-muted-foreground max-w-sm md:max-w-lg text-center"
           >
-            Smart Automation handles the work.US accounting experts handle the accuracy.Bookkeeping ,payroll,and reporting - done right.
+            Smart Automation handles the work. US accounting experts handle the accuracy. Bookkeeping, payroll, and reporting - done right.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

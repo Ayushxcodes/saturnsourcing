@@ -43,9 +43,7 @@ export default function AboutHero() {
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-space-grotesk">
-              Traditional accounting wasn’t designed for speed or scale.
- We build AI-driven accounting systems that run continuously—automating workflows, surfacing insights, and keeping US businesses audit-ready at all times.
-This isn’t outsourcing. It’s a smarter operating model for finance.
+              Traditional accounting wasn’t designed for speed or scale. We build AI-driven accounting systems that run continuously—automating workflows, surfacing insights, and keeping US businesses audit-ready at all times. This isn’t outsourcing. It’s a smarter operating model for finance.
             </p>
 
             <div className="flex gap-4">

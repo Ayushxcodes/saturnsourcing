@@ -27,7 +27,7 @@ const courseCategories = [
     title: "AI Expertise",
     icon: BrainIcon,
     description:
-      "US GAAP–aligned accounting powered by intelligent automation.Our AI handles transaction categorization, reconciliations, and anomaly detection—continuously and at scale.",
+      "US GAAP–aligned accounting powered by intelligent automation. Our AI handles transaction categorization, reconciliations, and anomaly detection—continuously and at scale.",
     bgColor: "bg-blue-50",
     iconColor: "text-blue-600",
   },
@@ -36,7 +36,7 @@ const courseCategories = [
     title: "Automation-First Platform",
     icon: GearIcon,
     description:
-      "Built from the ground up for speed and accuracy.Always-on workflows, real-time financials, and a continuous close—without manual back-and-forth.",
+      "Built from the ground up for speed and accuracy. Always-on workflows, real-time financials, and a continuous close—without manual back-and-forth.",
     bgColor: "bg-purple-50",
     iconColor: "text-purple-600",
   },
@@ -45,7 +45,7 @@ const courseCategories = [
     title: "US-Focused Customers",
     icon: GlobeIcon,
     description:
-      "Trusted by US startups, SMBs, and growing finance teams.Designed for companies that want modern, automated accounting without sacrificing compliance or control.",
+      "Trusted by US startups, SMBs, and growing finance teams. Designed for companies that want modern, automated accounting without sacrificing compliance or control.",
     bgColor: "bg-indigo-50",
     iconColor: "text-indigo-600",
   },
@@ -54,7 +54,7 @@ const courseCategories = [
     title: "Team",
     icon: UsersThreeIcon,
     description:
-      "A blend of product thinkers and accounting professionals.Our team designs automated accounting systems and monitors them continuously—so issues are caught early, not at month-end",
+      "A blend of product thinkers and accounting professionals. Our team designs automated accounting systems and monitors them continuously—so issues are caught early, not at month-end.",
     bgColor: "bg-green-50",
     iconColor: "text-green-600",
   },
@@ -63,7 +63,7 @@ const courseCategories = [
     title: "Vision",
     icon: EyeIcon,
     description:
-      "Accounting that runs in the background.We aim to eliminate manual processes and delays, giving US businesses instant access to accurate, decision-ready financials.",
+      "Accounting that runs in the background. We aim to eliminate manual processes and delays, giving US businesses instant access to accurate, decision-ready financials.",
     bgColor: "bg-red-50",
     iconColor: "text-red-600",
   },
@@ -72,7 +72,7 @@ const courseCategories = [
     title: "Values",
     icon: HeartIcon,
     description:
-      "Built for trust at scale.We value precision, clarity, and systems that improve over time—so your books get smarter, not just faster.",
+      "Built for trust at scale. We value precision, clarity, and systems that improve over time—so your books get smarter, not just faster.",
     bgColor: "bg-cyan-50",
     iconColor: "text-cyan-600",
   },

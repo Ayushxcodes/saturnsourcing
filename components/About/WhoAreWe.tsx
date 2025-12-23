@@ -10,25 +10,25 @@ const values = [
     icon: "🎯",
     title: " Innovation",
     description:
-      "We improve systems, not just tools.Our focus is on practical innovation—changes that remove friction and make accounting more reliable over time.",
+      "We improve systems, not just tools. Our focus is on practical innovation—changes that remove friction and make accounting more reliable over time.",
   },
   {
     icon: "🤝 ",
     title: "Collaboration",
     description:
-      "Accounting works best when it’s aligned.We work closely with our clients’ teams to ensure processes fit real workflows, not theoretical models.",
+      "Accounting works best when it’s aligned. We work closely with our clients’ teams to ensure processes fit real workflows, not theoretical models.",
   },
   {
     icon: "📈",
     title: "Growth",
     description:
-      "Designed for long-term scale.We build foundations that support growth without constant rework, process changes, or operational strain",
+      "Designed for long-term scale. We build foundations that support growth without constant rework, process changes, or operational strain",
   },
   {
     icon: "✨",
     title: " Excellence",
     description:
-      "Consistency over perfection.We prioritize repeatable accuracy, clear standards, and dependable outcomes—month after month.",
+      "Consistency over perfection. We prioritize repeatable accuracy, clear standards, and dependable outcomes—month after month.",
   },
 ];
 
