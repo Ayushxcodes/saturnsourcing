@@ -10,7 +10,7 @@ const contactInfo = [
   {
     icon: EnvelopeSimple,
     title: "Email",
-    details: "hello@saturnsourcing.com",
+    details: "Nishant@saturnconsultinggroup.com",
   },
 ];
 
@@ -146,6 +146,7 @@ export default function GetInTouch() {
               const IconComponent = info.icon;
               return (
                 <motion.div
+                  className={index === 0 ? "sm:col-span-2" : undefined}
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -165,7 +166,7 @@ export default function GetInTouch() {
                         <h3 className="font-semibold text-slate-900 mb-1 font-space-grotesk">
                           {info.title}
                         </h3>
-                        <p className="text-sm text-slate-600 font-space-grotesk">
+                        <p className="text-sm text-slate-600 font-space-grotesk break-words">
                           {info.details}
                         </p>
                       </div>
