@@ -97,58 +97,63 @@ const faqData = [
   {
     question: "What services do you offer?",
     answer:
-      "We provide a comprehensive suite of accounting services including payroll processing, tax preparation, financial reporting, and bookkeeping. We also offer bespoke services tailored to specific business needs.",
+      "We provide a comprehensive suite of accounting services including payroll processing, tax preparation, financial reporting, bookkeeping, cloud accounting solutions, and proactive tax strategy planning tailored to your business needs.",
   },
   {
-    question: "How does outsourcing accounting to the UK work?",
+    question: "How does cloud accounting work for US businesses?",
     answer:
-      "Our process begins with an initial consultation to understand your specific needs. We then set up a secure system for data transfer and communication. Regular updates and reports are provided based on your chosen service level.",
+      "We use secure, cloud-based accounting platforms that allow real-time access to your financial data from anywhere. Our team manages your books, reporting, and compliance while ensuring alignment with US accounting standards and IRS requirements.",
   },
   {
-    question: "What are the benefits of outsourcing accounting services?",
+    question: "How can cloud accounting benefit my business?",
     answer:
-      "Outsourcing your accounting functions can lead to significant cost savings, enhanced efficiency, and access to specialized expertise without the need for in-house training. It also allows you to focus more on your core business activities.",
+      "Cloud accounting improves accuracy, provides real-time financial visibility, enhances collaboration, and reduces manual processes. It also enables better decision-making through up-to-date reports and seamless integration with other business tools.",
+  },
+  {
+    question: "Do you provide US tax planning and tax strategy services?",
+    answer:
+      "Yes, we specialize in US tax planning and strategy. We proactively analyze your financial position to minimize tax liabilities, ensure IRS compliance, and identify opportunities such as deductions, credits, and entity structuring benefits.",
   },
   {
     question: "Is my data secure with your services?",
     answer:
-      "Yes, data security is our top priority. We use advanced encryption methods for data transfer and storage, and our systems comply with GDPR and other regulatory standards to ensure your information is protected.",
+      "Yes, data security is our top priority. We use advanced encryption, secure cloud infrastructure, and strict access controls. Our systems comply with US data protection standards and industry best practices to keep your information safe.",
   },
   {
     question: "How are your services priced?",
     answer:
-      "We offer flexible pricing models that can be tailored to your specific needs, including fixed monthly fees, hourly rates, or per-service charges. We ensure transparency in our pricing without any hidden costs.",
+      "We offer flexible pricing models tailored to your needs, including fixed monthly packages, hourly rates, or service-based pricing. Our pricing is transparent, with no hidden fees.",
   },
   {
     question: "Can your services scale with my business?",
     answer:
-      "Absolutely. Our services are designed to scale with your business growth. We can adjust resource allocation and service levels as your business needs change.",
+      "Absolutely. Our cloud-based systems and service structure are designed to scale as your business grows, whether you’re adding employees, expanding operations, or increasing transaction volume.",
   },
   {
     question: "Who will handle my accounts?",
     answer:
-      "Your accounts will be managed by a dedicated team of qualified accountants who have extensive experience in managing accounts across various industries.",
+      "Your accounts will be managed by a dedicated team of qualified accountants and tax professionals experienced in US accounting standards, cloud platforms, and tax regulations.",
   },
   {
     question: "What do I need to get started with your services?",
     answer:
-      "To get started, we require some basic information about your business and access to your existing financial records. We will guide you through the setup process to ensure a smooth transition.",
+      "To get started, we need basic information about your business, prior financial records, and access to your accounting systems. Our onboarding team will guide you through every step for a smooth transition.",
   },
   {
     question:
-      "What makes your services unique compared to other outsourcing firms?",
+      "What makes your cloud accounting and tax services unique?",
     answer:
-      "We differentiate ourselves through our commitment to customer service, use of the latest technology, and our ability to offer customized solutions that are specifically tailored to meet the unique needs of each client.",
+      "We combine personalized client service with modern cloud technology and proactive tax strategy. Our solutions are customized to your business goals, ensuring compliance, efficiency, and long-term financial optimization.",
   },
   {
     question: "What happens if I am not satisfied with the service?",
     answer:
-      "We strive for complete customer satisfaction and offer a service guarantee. If you’re not satisfied with our services, we will work with you to make it right, including assigning a new team to your account if necessary.",
+      "We are committed to your satisfaction. If you’re not happy with our service, we will address your concerns promptly and adjust our approach, including assigning a new team if necessary.",
   },
   {
     question: "How can I contact you for support?",
     answer:
-      "Our support team is available via email, phone, and live chat. We ensure quick response times to all inquiries, typically within 24 hours.",
+      "Our support team is available via email, phone, and live chat. We typically respond to all inquiries within 24 hours.",
   },
 ];
 

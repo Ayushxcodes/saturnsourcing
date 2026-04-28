@@ -8,7 +8,6 @@ const ContactUs = () => {
     <div className="w-full">
       <ContactHero />
       <GetInTouch />
-      <ContactMap />
     </div>
   );
 };

@@ -3,34 +3,14 @@
 import { motion } from "motion/react";
 import Container from "@/components/base/Container";
 import { Card } from "@/components/ui/card";
-import {
-  Phone,
-  EnvelopeSimple,
-  MapPin,
-  Clock,
-} from "@phosphor-icons/react/dist/ssr";
+import { EnvelopeSimple } from "@phosphor-icons/react/dist/ssr";
 import { useState } from "react";
 
 const contactInfo = [
   {
-    icon: Phone,
-    title: "Phone",
-    details: "+91 (123) 456-7890",
-  },
-  {
     icon: EnvelopeSimple,
     title: "Email",
     details: "hello@saturnsourcing.com",
-  },
-  {
-    icon: MapPin,
-    title: "Address",
-    details: "123 Business Street, New Delhi, India",
-  },
-  {
-    icon: Clock,
-    title: "Hours",
-    details: "Mon - Fri, 9:00 AM - 6:00 PM",
   },
 ];
 
@@ -173,7 +153,7 @@ export default function GetInTouch() {
                   viewport={{ once: true }}
                 >
                   <Card className="p-6 border border-orange-100 bg-gradient-to-br from-white to-orange-50 hover:shadow-lg hover:shadow-orange-200 transition-all duration-300">
-                    <div className="flex items-start gap-4">
+                    <div className="flex items-center gap-4">
                       <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-orange-100 flex items-center justify-center">
                         <IconComponent
                           size={24}
